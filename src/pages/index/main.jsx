@@ -79,7 +79,7 @@ function index() {
                             <li>
                                 <div className="name">CSS</div>
                                 <div className="percentage">70%</div>
-                                <div className="slider"><div className="slide cdd"></div></div>
+                                <div className="slider"><div className="slide css"></div></div>
                             </li>
                             <li>
                                 <div className="name">JavaScript</div>
