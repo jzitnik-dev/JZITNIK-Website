@@ -19,8 +19,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path='/' element={<Index />} />
         <Route path='/legal' element={<Legal />} />
-        <Route path='/certificates' element={<CertifikatyMain js python linux/>} />
+        <Route path='/certificates' element={<CertifikatyMain js html python linux/>} />
         <Route path='/certificates/js' element={<CertifikatyMain js/>} />
+        <Route path='/certificates/html' element={<CertifikatyMain html/>} />
         <Route path='/certificates/python' element={<CertifikatyMain python/>} />
         <Route path='/certificates/linux' element={<CertifikatyMain linux/>} />
 

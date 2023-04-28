@@ -12,6 +12,7 @@ function certifikaty(contain) {
                         <p>{texty["mamcertifikaty"]}</p>
                         <div className="certifikatyList">
                             {contain["js"]? <Js /> :null}
+                            {contain["html"]? <Html /> :null}
                             {contain["python"]? <Python /> :null}
                             {contain["linux"]? <Linux /> :null}
                         </div>
@@ -43,6 +44,14 @@ function Linux() {
         <>
             <h2>Linux</h2>
             <a target="_blank" href="/certifikaty/linux/1.pdf">Linux Operating System</a>
+        </>
+    )
+}
+function Html() {
+    return (
+        <>
+            <h2>HTML</h2>
+            <a target="_blank" href="https://www.freecodecamp.org/certification/jzitnik/responsive-web-design">Responsive Web Design</a>
         </>
     )
 }

@@ -148,14 +148,14 @@ function index() {
                                     <p>JavaScript</p>
                                 </div>
                             </Link>
+                            <Link to="/certificates/html">
+                                <div className="certifikat animation hover3d" style={{"backgroundImage": "url(/images/html_code.png)"}}>
+                                    <p>HTML</p>
+                                </div>
+                            </Link>
                             <Link to="/certificates/python">
                                 <div className="certifikat animation hover3d" style={{"backgroundImage": "url(/images/python_code.png)"}}>
                                     <p>Python</p>
-                                </div>
-                            </Link>
-                            <Link to="/certificates/linux">
-                                <div className="certifikat animation hover3d" style={{"backgroundImage": "url(/images/linux_code.png)"}}>
-                                    <p>Linux</p>
                                 </div>
                             </Link>
                         </div>
