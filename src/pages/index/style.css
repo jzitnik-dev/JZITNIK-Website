@@ -1,0 +1,425 @@
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: #112240;
+    display: flex;
+    justify-content: center;
+    padding: 0px 10vw;
+}
+main section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 0px;
+    max-width: 900px;
+    width: 100%;
+}
+main section *.animation {
+    opacity: 0;
+    top: 20px;
+    position: relative;
+}
+main section *.animation.show {
+    opacity: 1;
+    top: 0;
+}
+main section .hello {
+    font-size: 30px;
+    color: #57cbff;
+    font-family: "Roboto Mono",monospace;
+    transition: ease 0.6s all;
+    transition-delay: 0.2s;
+}
+main section h2 {
+    font-family: "Inter","San Francisco";
+    color: #ccd6f6;
+    font-size: 100px;
+    transition: ease 0.6s all;
+    transition-delay: 0.4s;
+}
+main section .miniAbout {
+    font-family: "Inter","San Francisco";
+    color: #acb4cc;
+    font-size: 25px;
+    transition: ease 0.6s all;
+    transition-delay: 0.6s;
+}
+.about {
+    height: auto;
+    width: 100%;
+    background-color: #112240;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.about .element {
+    padding: 20px;
+    width: 700px;
+    max-width: 100%;
+    opacity: 0;
+    top: 20px;
+    position: relative;
+    transition: ease 0.6s all;
+    transition-delay: 0.4s;
+}
+.about .element.show {
+    opacity: 1;
+    top: 0;
+}
+.about .element .title {
+    margin-bottom: 10px;
+    color: #57cbff;
+    font-family: "Roboto Mono",monospace;
+    font-size: 40px;
+    position: relative;
+    width: fit-content;
+}
+.about .element p{
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #ccd6f6;
+    font-family: "Inter","San Francisco";
+}
+
+.skills {
+    height: auto;
+    width: 100%;
+    background-color: #112240;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    
+}
+.skills .element {
+    padding: 20px;
+    width: 900px;
+    max-width: 100%;
+    opacity: 0;
+    top: 20px;
+    position: relative;
+    transition: ease 0.5s all;
+    transition-delay: 0.5s;
+}
+.skills .element.show {
+    opacity: 1;
+    top: 0;
+}
+.skills .element .title {
+    margin-bottom: 10px;
+    color: #57cbff;
+    font-family: "Roboto Mono",monospace;
+    font-size: 40px;
+    position: relative;
+    width: fit-content;
+}
+.skills .element p{
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #ccd6f6;
+    font-family: "Inter","San Francisco";
+}
+.skills .element .skillsGrid {
+    grid-template-columns: repeat(2, minmax(50%, 100%));
+    display: grid;
+    gap: 0px 10px;
+    list-style: none;
+}
+.skills .element .skillsGrid li {
+    color: #ccd6f6;
+    font-family: "Inter","San Francisco";
+    padding: 10px
+}
+.skills .element .skillsGrid li .name {
+    float: left;
+}
+.skills .element .skillsGrid li .name .ucimse{
+    margin-left: 10px;
+    color: rgb(54, 197, 54);
+}
+.skills .element .skillsGrid li .percentage {
+    float: right;
+}
+.skills .element .skillsGrid .slider {
+    width: 100%;
+    height: 10px;
+    background-color: white;
+    margin-top: 25px;
+    border-radius: 5px;
+}
+.skills .element .skillsGrid .slider .slide {
+    height: 100%;
+    background-color: #57cbff;
+    border-radius: 5px;
+    width: 0%;
+    transition: ease-out 0.7s width;
+    transition-delay: 0.6s;
+}
+.skills .element .skillsGrid.show .slider .slide.html {width: 95%}
+.skills .element .skillsGrid.show .slider .slide.css {width: 70%}
+.skills .element .skillsGrid.show .slider .slide.js {width: 95%}
+.skills .element .skillsGrid.show .slider .slide.react {width: 40%}
+.skills .element .skillsGrid.show .slider .slide.bash {width: 70%}
+.skills .element .skillsGrid.show .slider .slide.linux {width: 95%}
+.skills .element .skillsGrid.show .slider .slide.java {width: 20%}
+.skills .element .skillsGrid.show .slider .slide.python {width: 95%}
+.skills .element .skillsGrid.show .slider .slide.php {width: 50%}
+.skills .element .skillsGrid.show .slider .slide.typescript {width: 85%}
+.skills .element .skillsGrid.show .slider .slide.git {width: 40%}
+.skills .element .skillsGrid.show .slider .slide.sql {width: 65%}
+.skills .element .skillsGrid.show .slider .slide.nodejs {width: 80%}
+@media only screen and (max-width: 600px) {
+    .skills .element .skillsGrid {
+        grid-template-columns: repeat(1, minmax(50%, 100%));
+    }
+}
+.certifikaty {
+    height: auto;
+    width: 100%;
+    background-color: #112240;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    
+}
+.certifikaty .element {
+    padding: 20px;
+    width: 1201px;
+    max-width: 100%;
+}
+.certifikaty .element .title {
+    margin-bottom: 20px;
+    color: #57cbff;
+    font-family: "Roboto Mono",monospace;
+    font-size: 40px;
+    position: relative;
+    width: fit-content;
+}
+.certifikaty .element .certifikats {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.certifikaty .element .certifikats a {
+    text-decoration: none;
+}
+@media only screen and (max-width: 1088px) {
+    .certifikaty .element .certifikats {
+        display: flex;
+        flex-direction: column;
+    }
+    .certifikaty .element .certifikats .certifikat {
+        margin-bottom: 20px;
+    }
+}
+.certifikaty .element .certifikats .certifikat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    left: -40px;
+    position: relative;
+    transition: ease 0.5s 0.3s left, ease 0.5s 0.3s opacity, ease-out 0.7s width, transform 0.1s ease;
+}
+.certifikaty .element .certifikats .certifikat.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    left: 0;
+}
+.certifikaty .element .certifikats .certifikat p {
+    color: white;
+    font-size: 55px;
+    font-family: "Inter","San Francisco";
+    text-shadow: 2px 6px 4px rgba(0,0,0,0.3), 
+    0px -2px 8px rgba(255,255,255,0.3);
+}
+.projekty {
+    height: auto;
+    width: 100%;
+    background-color: #112240;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.projekty .element {
+    padding: 20px;
+    width: 1201px;
+    max-width: 100%;
+}
+.projekty .element .title {
+    color: #57cbff;
+    font-family: "Roboto Mono",monospace;
+    font-size: 40px;
+    position: relative;
+    width: fit-content;
+}
+.projekty .element p{
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #ccd6f6;
+    font-family: "Inter","San Francisco";
+}
+.projekty .element .projects {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.projekty .element .projects a{
+    text-decoration: none;
+}
+@media only screen and (max-width: 1088px) {
+    .projekty .element .projects {
+        display: flex;
+        flex-direction: column;
+    }
+    .projekty .element .projects .project {
+        margin-bottom: 20px;
+    }
+}
+.projekty .element .projects .project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    left: -40px;
+    position: relative;
+}
+.projekty .element .projects .project.show {
+    opacity: 1;
+    left: 0;
+}
+.projekty .element .projects .project:nth-child(1) {
+    transition: ease 0.5s 0.3s left, ease 0.5s 0.3s opacity, ease-out 0.7s width, transform 0.1s ease;
+}
+.projekty .element .projects .project:nth-child(2) {
+    transition: ease 0.5s 0.4s left, ease 0.5s 0.4s opacity, ease-out 0.7s width, transform 0.1s ease;
+}
+.projekty .element .projects .project p {
+    color: white;
+    font-size: 55px;
+    font-family: "Inter","San Francisco";
+    text-shadow: 2px 6px 4px rgba(0,0,0,0.3), 
+    0px -2px 8px rgba(255,255,255,0.3);
+    text-align: center;
+}
+
+.kontakt {
+    height: auto;
+    width: 100%;
+    background-color: #112240;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    
+}
+.kontakt .element {
+    padding: 20px;
+    width: 900px;
+    max-width: 100%;
+    top: 20px;
+    opacity: 0;
+    position: relative;
+    transition: ease 0.5s 0.5s opacity, ease 0.5s 0.5s top;
+}
+.kontakt .element.show {
+    top: 0;
+    opacity: 1;
+}
+.kontakt .element .title {
+    margin-bottom: 10px;
+    color: #57cbff;
+    font-family: "Roboto Mono",monospace;
+    font-size: 40px;
+    position: relative;
+    width: fit-content;
+}
+.kontakt .element p{
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #ccd6f6;
+    font-family: "Inter","San Francisco";
+}
+.kontakt .element .contactElement {
+    margin-top: 10px;
+}
+.kontakt .element .contactElement .row {
+    width: 100%;
+    display: flex;
+}
+.kontakt .element .contactElement .row input {
+    width: 50%;
+    height: 50px;
+    padding-left: 20px;
+    margin: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    background-color: #17315e;
+    color: white;
+    font-family: "Inter","San Francisco";
+}
+.kontakt .element .contactElement .row input:focus,.kontakt .element .contactElement textarea:focus {
+    outline: 1px solid #57cbff;
+}
+.kontakt .element .contactElement textarea {
+    color: white;
+    background-color: #17315e;
+    margin: 5px;
+    width: 99%;
+    resize: vertical;
+    height: 200px;
+    padding: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.kontakt .element .contactElement input.submit {
+    width: 99%;
+    height: 50px;
+    padding-left: 20px;
+    margin: 5px;
+    border: none;
+    outline: #57cbff 1px solid;
+    border-radius: 5px;
+    background-color: #17315e;
+    color: white;
+    cursor: pointer;
+    font-family: "Inter","San Francisco";
+    font-size: 15px;
+}
+.kontakt .element .contactElement .messages * {
+    width: calc(100% - 10px);
+    height: 50px;
+    margin-bottom: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    margin-top: 0px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Inter","San Francisco";
+    color: white;
+    font-size: 22px;
+}
+.kontakt .element .contactElement .messages .success {
+    background-color: green;
+}
+.kontakt .element .contactElement .messages .error {
+    background-color: red;
+}
+.kontakt .element .contactElement .messages .load {
+    background-color: rgb(92, 92, 92);
+}

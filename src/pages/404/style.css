@@ -1,0 +1,18 @@
+.main404 {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 200px);
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    width: 100vw;
+    background-color: #112240;
+    color: white;
+    font-family: "Inter","San Francisco";
+}
+.main404 h1 {
+    font-size: 150px;
+}
+.main404 p {
+    font-size: 20px;
+}

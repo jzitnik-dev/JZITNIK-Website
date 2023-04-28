@@ -1,0 +1,24 @@
+.loading {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 213;
+    background-color: #112240;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: ease 0.5s opacity;
+}
+.loading.show {
+    opacity: 1;
+}
+.loading .loader {
+    width: 100px;
+    height: 100px;
+    opacity: 0;
+    transition: ease 0.5s 0.3s opacity;
+}
+.loading .loader.show {
+    opacity: 1;
+}
