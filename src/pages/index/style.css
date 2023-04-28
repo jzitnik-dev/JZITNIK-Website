@@ -46,6 +46,17 @@ main section .miniAbout {
     transition: ease 0.6s all;
     transition-delay: 0.6s;
 }
+@media only screen and (max-width: 750px) {
+    main section .hello {
+        font-size: 25px
+    }
+    main section h2 {
+        font-size: 70px;
+    }
+    main section .miniAbout {
+        font-size: 20px;
+    }
+}
 .about {
     height: auto;
     width: 100%;
@@ -232,6 +243,8 @@ main section .miniAbout {
     align-items: center;
     opacity: 1;
     left: 0;
+    max-width: 100%;
+    aspect-ratio: 3/ 2;
 }
 .certifikaty .element .certifikats .certifikat p {
     color: white;
@@ -239,6 +252,11 @@ main section .miniAbout {
     font-family: "Inter","San Francisco";
     text-shadow: 2px 6px 4px rgba(0,0,0,0.3), 
     0px -2px 8px rgba(255,255,255,0.3);
+}
+@media only screen and (max-width: 500px) {
+    .certifikaty .element .certifikats .certifikat p {
+        font-size: 30px;
+    }
 }
 .projekty {
     height: auto;
@@ -292,6 +310,8 @@ main section .miniAbout {
     opacity: 0;
     left: -40px;
     position: relative;
+    max-width: 100%;
+    aspect-ratio: 3/ 2;
 }
 .projekty .element .projects .project.show {
     opacity: 1;
@@ -310,6 +330,11 @@ main section .miniAbout {
     text-shadow: 2px 6px 4px rgba(0,0,0,0.3), 
     0px -2px 8px rgba(255,255,255,0.3);
     text-align: center;
+}
+@media only screen and (max-width: 500px) {
+    .projekty .element .projects .project p {
+        font-size: 30px;
+    }
 }
 
 .kontakt {
@@ -368,6 +393,14 @@ main section .miniAbout {
     background-color: #17315e;
     color: white;
     font-family: "Inter","San Francisco";
+}
+@media only screen and (max-width: 750px) {
+    .kontakt .element .contactElement .row {
+        flex-direction: column;
+    }
+    .kontakt .element .contactElement .row input {
+        width: 99%;
+    }
 }
 .kontakt .element .contactElement .row input:focus,.kontakt .element .contactElement textarea:focus {
     outline: 1px solid #57cbff;
