@@ -91,6 +91,14 @@ const texty = {
     "mamcertifikaty": {
         czech: "Mám i nějaké certifikáty",
         english: "I've also some certificates"
+    },
+    "zmenitJazyky": {
+        czech: "Změnit jazyk",
+        english: "Change language"
+    },
+    "vytvoril": {
+        czech: "Vytvořil",
+        english: "By"
     }
 }
 if (!localStorage.getItem("language")) ((navigator.language || navigator.userLanguage).split("-")[0] == "cs") ? localStorage.setItem("language","czech") : localStorage.setItem("language","english");
