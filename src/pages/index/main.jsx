@@ -54,6 +54,9 @@ function index() {
             <Loading />
             <div className="content" style={{"display": "none"}}>
                 <main id="particles">
+                    <div className="gradient">
+                        
+                    </div>
                     <section>
                         <p className="hello animation animationStyles">{texty["Ahoj, já jsem"]}</p>
                         <h2 className="animation animationStyles">Jakub Žitník</h2>

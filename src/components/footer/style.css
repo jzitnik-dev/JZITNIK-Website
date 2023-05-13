@@ -1,8 +1,7 @@
 footer {
     width: 100%;
     height: 200px;
-    background-color: #112240;
-    border-top: 1px solid black;
+    background-color: #040615;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -11,6 +10,25 @@ footer {
     color: white;
     font-family: "Inter","San Francisco";
     gap: 2px;
+    position: relative;
+}
+footer .gradient {
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    width: 100%;
+    background: radial-gradient(80.10000000000001% 100% at 50% 0%,rgba(38,140,245,.25) 0%,rgba(38,140,245,0) 100%);
+    transform: rotate(180deg);
+    z-index: auto;
+}
+footer .elements {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 1;
 }
 footer a {
     color: #57cbff;

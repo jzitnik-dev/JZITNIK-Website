@@ -1,10 +1,16 @@
 main {
     width: 100%;
     height: 100vh;
-    background-color: #112240;
+    background-color: #040615;
     display: flex;
     justify-content: center;
     padding: 0px 10vw;
+}
+main .gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(80.10000000000001% 50% at 50% 0%,rgba(38,140,245,.25) 0%,rgba(38,140,245,0) 100%);
 }
 main section {
     display: flex;
@@ -60,7 +66,7 @@ main section .miniAbout {
 .about {
     height: auto;
     width: 100%;
-    background-color: #112240;
+    background-color: #040615;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,7 +105,7 @@ main section .miniAbout {
 .skills {
     height: auto;
     width: 100%;
-    background-color: #112240;
+    background-color: #040615;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -192,7 +198,7 @@ main section .miniAbout {
 .certifikaty {
     height: auto;
     width: 100%;
-    background-color: #112240;
+    background-color: #040615;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -261,7 +267,7 @@ main section .miniAbout {
 .projekty {
     height: auto;
     width: 100%;
-    background-color: #112240;
+    background-color: #040615;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -340,7 +346,7 @@ main section .miniAbout {
 .kontakt {
     height: auto;
     width: 100%;
-    background-color: #112240;
+    background-color: #040615;
     display: flex;
     align-items: center;
     justify-content: center;
