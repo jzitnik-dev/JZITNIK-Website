@@ -27,6 +27,7 @@ function Js() {
         <>
             <h2>JavaScript</h2>
             <a target="_blank" href="https://www.freecodecamp.org/certification/jzitnik/javascript-algorithms-and-data-structures">JavaScript Algorithms and Data Structures</a><br></br>
+            <a target="_blank" href="https://www.freecodecamp.org/certification/jzitnik/back-end-development-and-apis">JavaScript Back End Development and APIs</a><br></br>
             <a target="_blank" href="/certifikaty/js/1.pdf">JavaScript (advanced)</a>
         </>
     )
