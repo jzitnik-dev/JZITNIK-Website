@@ -55,7 +55,7 @@ function index() {
             <div className="content" style={{"display": "none"}}>
                 <main id="particles">
                     <div className="gradient">
-                        
+
                     </div>
                     <section>
                         <p className="hello animation animationStyles">{texty["Ahoj, já jsem"]}</p>
@@ -135,7 +135,7 @@ function index() {
                                 <div className="slider"><div className="slide sql"></div></div>
                             </li>
                             <li>
-                                <div className="name">Node JS<span className="ucimse">{texty["ucimse"]}</span></div>
+                                <div className="name">Node JS</div>
                                 <div className="percentage">80%</div>
                                 <div className="slider"><div className="slide nodejs"></div></div>
                             </li>
