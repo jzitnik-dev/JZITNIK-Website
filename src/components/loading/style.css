@@ -14,12 +14,6 @@
     opacity: 1;
 }
 .loading .loader {
-    width: 100px;
-    height: 100px;
-    opacity: 0;
-    transition: ease 0.5s 0.3s opacity;
-}
-.loading .loader {
     display: block;
     position: relative;
     width: 150px;
@@ -30,6 +24,8 @@
     -webkit-animation: spin 1.7s linear infinite;
             animation: spin 1.7s linear infinite;
     z-index: 11;
+    opacity: 0;
+    transition: ease 0.5s 0.3s opacity;
   }
   .loading .loader:before {
     content: "";
