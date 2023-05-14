@@ -162,6 +162,7 @@ function index() {
                                 </div>
                             </Link>
                         </div>
+                        <div className="button"><Link to="/certificates" className="buttonContainer animation">{texty["zobrazitVse"]}</Link></div>
                     </div>
                 </section>
                 <section className="projekty" id="projects">

@@ -99,6 +99,10 @@ const texty = {
     "vytvoril": {
         czech: "Vytvořil",
         english: "By"
+    },
+    "zobrazitVse": {
+        czech: "Zobrazit vše",
+        english: "Show all"
     }
 }
 if (!localStorage.getItem("language")) ((navigator.language || navigator.userLanguage).split("-")[0] == "cs") ? localStorage.setItem("language","czech") : localStorage.setItem("language","english");
