@@ -1,5 +1,5 @@
 .certifikatyMain {
-    min-height: calc(100vh - 200px);
+    min-height: calc(100vh - 250px);
     background-color: #040615;
     display: flex;
     justify-content: center;
