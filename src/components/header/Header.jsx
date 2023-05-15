@@ -31,7 +31,7 @@ function Header() {
                 </div>
             </div>
             <div className="header">
-                <header>
+                <header style={{top: "0px"}}>
                     <NavLink to="/"><div className="name">Jakub Žitník</div></NavLink>
                     <div className="elements">
                         <NavLink to="/" className="link">{texty["domov"]}</NavLink>
