@@ -49,6 +49,35 @@ function index() {
         ScrollAnimation(document.querySelectorAll(".animation"))
         
     }, );
+    useEffect(() => {
+        document.querySelectorAll("#cards").forEach(element => {
+            element.onmousemove = e => {
+                for(const card of document.getElementsByClassName("card")) {
+                    const rect = card.getBoundingClientRect(),
+                        x = e.clientX - rect.left,
+                        y = e.clientY - rect.top;
+              
+                    card.style.setProperty("--mouse-x", `${x}px`);
+                    card.style.setProperty("--mouse-y", `${y}px`);
+                };
+            }
+        });
+
+        /* -- Glow effect -- */
+
+const blob = document.getElementById("blob");
+
+window.onpointermove = event => { 
+  const { clientX, clientY } = event;
+  
+  blob.animate({
+    left: `${clientX}px`,
+    top: `${clientY}px`
+  }, { duration: 3000, fill: "forwards" });
+}
+
+
+    }, []);
     return (
         <>
             <Loading />
@@ -146,21 +175,56 @@ function index() {
                     <div className="element">
                         <div className="title">{texty["certifikaty"]}</div>
                         <div className="certifikats">
-                            <Link to="/certificates/js">
-                                <div className="certifikat animation hover3d" style={{"backgroundImage": "url(/images/js_code.png)"}}>
-                                    <p>JavaScript</p>
-                                </div>
-                            </Link>
-                            <Link to="/certificates/html">
-                                <div className="certifikat animation hover3d" style={{"backgroundImage": "url(/images/html_code.png)"}}>
-                                    <p>HTML</p>
-                                </div>
-                            </Link>
-                            <Link to="/certificates/python">
-                                <div className="certifikat animation hover3d" style={{"backgroundImage": "url(/images/python_code.png)"}}>
-                                    <p>Python</p>
-                                </div>
-                            </Link>
+                            <div id="cards">
+                                <Link to="/certificates/js">
+                                    <div className="card animation">
+                                        <div className="card-content">
+                                        <div className="card-image">
+                                            <img src="/images/js_code.png"></img>
+                                        </div>
+                                        <div className="card-info-wrapper">
+                                            <div className="card-info">
+                                            <div className="card-info-title">
+                                                <h3 style={{"fontSize": "30px"}}>JavaScript</h3>
+                                            </div>    
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </Link>
+                                <Link to="/certificates/html">
+                                    <div className="card animation">
+                                        <div className="card-content">
+                                        <div className="card-image">
+                                            <img src="/images/html_code.png"></img>
+                                        </div>
+                                        <div className="card-info-wrapper">
+                                            <div className="card-info">
+                                            <div className="card-info-title">
+                                                <h3 style={{"fontSize": "30px"}}>HTML</h3>
+                                            </div>    
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </Link>
+                                <Link to="/certificates/python">
+                                    <div className="card animation">
+                                        <div className="card-content">
+                                        <div className="card-image">
+                                            <img src="/images/python_code.png"></img>
+                                        </div>
+                                        <div className="card-info-wrapper">
+                                            <div className="card-info">
+                                            <div className="card-info-title">
+                                                <h3 style={{"fontSize": "30px"}}>Python</h3>
+                                            </div>    
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </Link>
+                            </div>
                         </div>
                         <div className="button"><Link to="/certificates" className="buttonContainer animation">{texty["zobrazitVse"]}</Link></div>
                     </div>
@@ -170,16 +234,40 @@ function index() {
                         <div className="title">{texty["projekty"]}</div>
                         <p>{texty["totoProjekty"]}</p>
                         <div className="projects">
-                            <a href="https://klindos.jzitnik.is-a.dev" target="_blank">
-                                <div className="project hover3d animation" style={{"backgroundImage": "url(/images/klindos.jpg)"}}>
-                                    <p>KLIND OS</p>
-                                </div>
-                            </a>
-                            <a href="https://github.com/JZITNIK-github/automatic-bio-changer" target="_blank">
-                                <div className="project hover3d animation">
-                                    <p style={{"fontSize": "40px"}}>Automatic bio changer</p>
-                                </div>
-                            </a>
+                            <div id="cards">
+                                <a href="https://klindos.jzitnik.is-a.dev" target="_blank">
+                                    <div className="card animation">
+                                        <div className="card-content">
+                                        <div className="card-image">
+                                            <img src="/images/klindos.jpg"></img>
+                                        </div>
+                                        <div className="card-info-wrapper">
+                                            <div className="card-info">
+                                            <div className="card-info-title">
+                                                <h3>KLIND OS [Czech]</h3>  
+                                                <h4>{texty["aboutKLINDOS"]}</h4>
+                                            </div>    
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="https://github.com/JZITNIK-github/automatic-bio-changer"  target="_blank">
+                                    <div className="card animation">
+                                        <div className="card-content">
+                                        
+                                        <div className="card-info-wrapper">
+                                            <div className="card-info">
+                                            <div className="card-info-title">
+                                                <h3>Automatic bio changer [English]</h3>  
+                                                <h4>{texty["aboutABC"]}</h4>
+                                            </div>    
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -203,6 +291,9 @@ function index() {
                     </div>
                 </section>
             </div>
+            
+            <div id="blob"></div>
+            <div id="blur"></div>
         </>
     )
 }

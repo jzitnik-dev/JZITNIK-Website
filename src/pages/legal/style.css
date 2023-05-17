@@ -1,10 +1,9 @@
 .mainlegal {
-    background-color: #040615;
     min-height: calc(100vh - 200px);
     padding: 20px;
     padding-top: 60px;
     color: white;
-    font-family: "Inter","San Francisco";
+    font-family: var(--main-font);
 }
 .mainlegal a {
     color: rgb(108, 189, 216)

@@ -37,8 +37,8 @@ const texty = {
         english: "Contact"
     },
     "totoKontakt": {
-        czech: "Zde mě můžete kontaktovat",
-        english: "Here you can contact me"
+        czech: "Zde mě můžete kontaktovat nebo na email: email@jzitnik.is-a.dev",
+        english: "Here you can contact me. Or you can contact me on email@jzitnik.is-a.dev"
     },
     "submit": {
         czech: "Odeslat",
@@ -103,6 +103,14 @@ const texty = {
     "zobrazitVse": {
         czech: "Zobrazit vše",
         english: "Show all"
+    },
+    "aboutKLINDOS": {
+        czech: "KLIND OS je můj největší projekt. Je to 'operační systém' v prohlížeči napsaný v JavaScript.",
+        english: "KLIND OS is my biggest project. It is 'operating system' that can be used in your browser. It is written in JavaScript."
+    },
+    "aboutABC": {
+        czech: "Automatic bio changer je program který automaticky změní vaše bio na podporovaných sociálních sítích.",
+        english: "Automatic bio changer is program that will automatically change your bio on supported platforms."
     }
 }
 if (!localStorage.getItem("language")) ((navigator.language || navigator.userLanguage).split("-")[0] == "cs") ? localStorage.setItem("language","czech") : localStorage.setItem("language","english");

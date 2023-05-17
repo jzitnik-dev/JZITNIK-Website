@@ -1,6 +1,5 @@
 .certifikatyMain {
     min-height: calc(100vh - 250px);
-    background-color: #040615;
     display: flex;
     justify-content: center;
 }
@@ -10,7 +9,7 @@
     max-width: 1200px;
     margin-top: 80px;
     color: white;
-    font-family: "Inter","San Francisco";
+    font-family: var(--main-font);
 }
 .certifikatyMain .element .title {
     font-size: 60px;

@@ -6,9 +6,8 @@
     flex-direction: column;
     gap: 5px;
     width: 100%;
-    background-color: #040615;
     color: white;
-    font-family: "Inter","San Francisco";
+    font-family: var(--main-font);
 }
 .main404 h1 {
     font-size: 150px;

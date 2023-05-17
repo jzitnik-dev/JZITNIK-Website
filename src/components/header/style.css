@@ -90,5 +90,5 @@ header .navIcon {
     justify-content: center;
     align-items: center;
     font-size: 40px;
-    font-family: "Inter","San Francisco";
+    font-family: var(--main-font);
 }

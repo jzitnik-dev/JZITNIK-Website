@@ -3,7 +3,7 @@
     height: 100vh;
     position: fixed;
     z-index: 213;
-    background-color: #040615;
+    background-color: var(--background-color);
     display: flex;
     justify-content: center;
     align-items: center;

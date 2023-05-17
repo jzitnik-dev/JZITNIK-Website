@@ -1,7 +1,9 @@
+:root {
+    --card-color: rgb(30, 29, 36);
+  }
 main {
     width: 100%;
     height: 100vh;
-    background-color: #040615;
     display: flex;
     justify-content: center;
     padding: 0px 10vw;
@@ -34,12 +36,12 @@ main section *.animation.show {
 main section .hello {
     font-size: 30px;
     color: #57cbff;
-    font-family: "Roboto Mono",monospace;
+    font-family: "Roboto Mono",monospace, sans-serif;
     transition: ease 0.6s all;
     transition-delay: 0.2s;
 }
 main section h2 {
-    font-family: "Inter","San Francisco";
+    font-family: var(--main-font);
     /*color: #ccd6f6;*/
     background-image: linear-gradient(98deg, rgb(255, 255, 255) 0%, rgb(127, 182, 213), rgb(127, 182, 213) 100%);
     background-clip: text;
@@ -50,7 +52,7 @@ main section h2 {
     transition-delay: 0.4s;
 }
 main section .miniAbout {
-    font-family: "Inter","San Francisco";
+    font-family: var(--main-font);
     color: #acb4cc;
     font-size: 25px;
     transition: ease 0.6s all;
@@ -70,7 +72,6 @@ main section .miniAbout {
 .about {
     height: auto;
     width: 100%;
-    background-color: #040615;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -93,7 +94,7 @@ main section .miniAbout {
 .about .element .title {
     margin-bottom: 10px;
     color: #57cbff;
-    font-family: "Roboto Mono",monospace;
+    font-family: "Roboto Mono",monospace, sans-serif;
     font-size: 40px;
     position: relative;
     width: fit-content;
@@ -103,13 +104,12 @@ main section .miniAbout {
     font-size: 20px;
     margin-top: 10px;
     color: #ccd6f6;
-    font-family: "Inter","San Francisco";
+    font-family: var(--main-font);
 }
 
 .skills {
     height: auto;
     width: 100%;
-    background-color: #040615;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,7 +133,7 @@ main section .miniAbout {
 .skills .element .title {
     margin-bottom: 10px;
     color: #57cbff;
-    font-family: "Roboto Mono",monospace;
+    font-family: "Roboto Mono",monospace, sans-serif;
     font-size: 40px;
     position: relative;
     width: fit-content;
@@ -143,7 +143,7 @@ main section .miniAbout {
     font-size: 20px;
     margin-top: 10px;
     color: #ccd6f6;
-    font-family: "Inter","San Francisco";
+    font-family: var(--main-font);
 }
 .skills .element .skillsGrid {
     grid-template-columns: repeat(2, minmax(50%, 100%));
@@ -153,7 +153,7 @@ main section .miniAbout {
 }
 .skills .element .skillsGrid li {
     color: #ccd6f6;
-    font-family: "Inter","San Francisco";
+    font-family: var(--main-font);
     padding: 10px
 }
 .skills .element .skillsGrid li .name {
@@ -202,7 +202,6 @@ main section .miniAbout {
 .certifikaty {
     height: auto;
     width: 100%;
-    background-color: #040615;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -217,24 +216,21 @@ main section .miniAbout {
 .certifikaty .element .title {
     margin-bottom: 20px;
     color: #57cbff;
-    font-family: "Roboto Mono",monospace;
+    font-family: "Roboto Mono",monospace, sans-serif;
     font-size: 40px;
     position: relative;
     width: fit-content;
 }
 .certifikaty .element .certifikats {
-    display: grid;
-    grid-template-columns: auto auto auto;
-}
-.certifikaty .element .certifikats a {
-    text-decoration: none;
+    display: flex;
+    justify-content: center;
 }
 .certifikaty .element .button .buttonContainer {
     max-width: fit-content;
     color: white;
     text-decoration: none;
     padding: 20px;
-    font-family: "Inter","San Francisco";
+    font-family: var(--main-font);
     background-color:#17315e;
     border-radius: 10px;
     box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
@@ -257,49 +253,12 @@ main section .miniAbout {
     width: 100%;
     margin-top: 30px;
 }
-@media only screen and (max-width: 1088px) {
-    .certifikaty .element .certifikats {
-        display: flex;
-        flex-direction: column;
-    }
-    .certifikaty .element .certifikats .certifikat {
-        margin-bottom: 20px;
-    }
-}
-.certifikaty .element .certifikats .certifikat {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    left: -40px;
-    position: relative;
-    transition: ease 0.5s 0.3s left, ease 0.5s 0.3s opacity, ease-out 0.7s width, transform 0.1s ease;
-}
-.certifikaty .element .certifikats .certifikat.show {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-    left: 0;
-    max-width: 100%;
-    aspect-ratio: 3/ 2;
-}
-.certifikaty .element .certifikats .certifikat p {
-    color: white;
-    font-size: 55px;
-    font-family: "Inter","San Francisco";
-    text-shadow: 2px 6px 4px rgba(0,0,0,0.3), 
-    0px -2px 8px rgba(255,255,255,0.3);
-}
-@media only screen and (max-width: 500px) {
-    .certifikaty .element .certifikats .certifikat p {
-        font-size: 30px;
-    }
-}
+
+
+
 .projekty {
     height: auto;
     width: 100%;
-    background-color: #040615;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -312,7 +271,7 @@ main section .miniAbout {
 }
 .projekty .element .title {
     color: #57cbff;
-    font-family: "Roboto Mono",monospace;
+    font-family: "Roboto Mono",monospace, sans-serif;
     font-size: 40px;
     position: relative;
     width: fit-content;
@@ -323,62 +282,170 @@ main section .miniAbout {
     font-size: 20px;
     margin-top: 10px;
     color: #ccd6f6;
-    font-family: "Inter","San Francisco";
+    font-family: var(--main-font);
 }
-.projekty .element .projects {
-    display: grid;
-    grid-template-columns: auto auto;
-}
-.projekty .element .projects a{
-    text-decoration: none;
-}
-@media only screen and (max-width: 1088px) {
-    .projekty .element .projects {
-        display: flex;
-        flex-direction: column;
-    }
-    .projekty .element .projects .project {
-        margin-bottom: 20px;
-    }
-}
-.projekty .element .projects .project {
+.projects {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
-    opacity: 0;
-    left: -40px;
-    position: relative;
-    max-width: 100%;
-    aspect-ratio: 3/ 2;
-}
-.projekty .element .projects .project.show {
+    margin: 0px;
+    overflow: hidden;
+    padding-top: 20px;
+  }
+  #cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: calc(100% - 20px);
+    justify-content: center;
+  }
+  
+  #cards:hover > .card::after {
     opacity: 1;
+  }
+  
+  .card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    height: 260px;
+    flex-direction: column;
+    position: relative;
+    width: 300px;
+    left: -30px;
+    opacity: 0;
+    transition-property: opacity left;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+  }
+  #cards a:nth-child(1) .card {
+    transition-delay: 0.2s;
+  }
+  #cards a:nth-child(2) .card{
+    transition-delay: 0.3s;
+  }
+  #cards a:nth-child(3) .card{
+    transition-delay: 0.4s;
+  }
+  .card.show {
     left: 0;
-}
-.projekty .element .projects .project:nth-child(1) {
-    transition: ease 0.5s 0.3s left, ease 0.5s 0.3s opacity, ease-out 0.7s width, transform 0.1s ease;
-}
-.projekty .element .projects .project:nth-child(2) {
-    transition: ease 0.5s 0.4s left, ease 0.5s 0.4s opacity, ease-out 0.7s width, transform 0.1s ease;
-}
-.projekty .element .projects .project p {
-    color: white;
-    font-size: 55px;
-    font-family: "Inter","San Francisco";
-    text-shadow: 2px 6px 4px rgba(0,0,0,0.3), 
-    0px -2px 8px rgba(255,255,255,0.3);
-    text-align: center;
-}
-@media only screen and (max-width: 500px) {
-    .projekty .element .projects .project p {
-        font-size: 30px!important;
-    }
-}
-
+    opacity: 1;
+  }
+  
+  .card:hover::before {
+    opacity: 1;
+  }
+  
+  .card::before,
+  .card::after {
+    border-radius: inherit;
+    content: "";
+    height: 100%;
+    left: 0px;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    transition: opacity 500ms;
+    width: 100%;
+  }
+  
+  .card::before {
+    background: radial-gradient(
+      800px circle at var(--mouse-x) var(--mouse-y), 
+      rgba(255, 255, 255, 0.06),
+      transparent 40%
+    );
+    z-index: 3;
+  }
+  
+  .card::after {  
+    background: radial-gradient(
+      600px circle at var(--mouse-x) var(--mouse-y), 
+      rgba(255, 255, 255, 0.4),
+      transparent 40%
+    );
+    z-index: 1;
+  }
+  
+  .card > .card-content {
+    background-color: var(--card-color);
+    border-radius: inherit;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    inset: 1px;
+    padding: 10px;
+    position: absolute;
+    z-index: 2;
+  }
+  
+  
+  h1, h2, h3, h4, span {
+    color: rgb(240, 240, 240);
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    margin: 0px;
+  }
+  
+  i {  
+    color: rgb(240, 240, 240);
+  }
+  
+  .card-image {
+    align-items: center;
+    display: flex;
+    height: 140px;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .card-image > img {
+    object-fit: contain;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card-info-wrapper {
+    align-items: center;
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-start;
+    padding: 0px 20px;
+  }
+  
+  .card-info {
+    align-items: flex-start;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .card-info > i {  
+    font-size: 1em;
+    height: 20px;
+    line-height: 20px;
+  }
+  
+  .card-info-title > h3 {
+    font-size: 1.1em;
+    line-height: 20px;
+  }
+  
+  .card-info-title > h4 {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.85em;
+    margin-top: 8px;
+  }
+  
+  
+  
+  
+  
+  
 .kontakt {
     height: auto;
     width: 100%;
-    background-color: #040615;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -401,7 +468,7 @@ main section .miniAbout {
 .kontakt .element .title {
     margin-bottom: 10px;
     color: #57cbff;
-    font-family: "Roboto Mono",monospace;
+    font-family: "Roboto Mono",monospace, sans-serif;
     font-size: 40px;
     position: relative;
     width: fit-content;
@@ -411,7 +478,7 @@ main section .miniAbout {
     font-size: 20px;
     margin-top: 10px;
     color: #ccd6f6;
-    font-family: "Inter","San Francisco";
+    font-family: var(--main-font);
 }
 .kontakt .element .contactElement {
     margin-top: 10px;
@@ -430,7 +497,7 @@ main section .miniAbout {
     border-radius: 5px;
     background-color: #17315e;
     color: white;
-    font-family: "Inter","San Francisco";
+    font-family: var(--main-font);
 }
 @media only screen and (max-width: 750px) {
     .kontakt .element .contactElement .row {
@@ -467,7 +534,7 @@ main section .miniAbout {
     background-color: #17315e;
     color: white;
     cursor: pointer;
-    font-family: "Inter","San Francisco";
+    font-family: var(--main-font);
     font-size: 15px;
 }
 .kontakt .element .contactElement .messages * {
@@ -481,7 +548,7 @@ main section .miniAbout {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: "Inter","San Francisco";
+    font-family: var(--main-font);
     color: white;
     font-size: 22px;
 }
@@ -494,3 +561,50 @@ main section .miniAbout {
 .kontakt .element .contactElement .messages .load {
     background-color: rgb(92, 92, 92);
 }
+
+
+
+@media only screen and (max-width: 750px) {
+    #blob, #blur {
+        display: none;
+    }
+}
+@keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+    
+    50% {
+      scale: 1 1.5;
+    }
+    
+    to {
+      rotate: 360deg;
+    }
+  }
+  
+  #blob {
+    background-color: white;
+    height: 34vmax;
+    aspect-ratio: 1;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    background: linear-gradient(to right, aquamarine, mediumpurple);
+    animation: rotate 20s infinite;
+    opacity: 0.3;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+  }
+  
+  #blur {
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    backdrop-filter: blur(12vmax);
+    position: fixed;
+    top: 0;
+
+  }

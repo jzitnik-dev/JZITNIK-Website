@@ -33,6 +33,11 @@ var sendMail = () => {
                     }
                 }, "1500")
             })
+            .catch (() => {
+                document.querySelector(".contactElement .messages .load").style.display = "none";
+                document.querySelector(".contactElement .messages .error").style.display = "flex";
+                document.querySelector(".contactElement .messages .error").textContent = document.querySelector(".contactElement .messages .error").getAttribute("errorother")
+            })
         }
         else {
             document.querySelector(".contactElement .messages .load").style.display = "none";
