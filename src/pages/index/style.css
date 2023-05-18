@@ -289,7 +289,6 @@ main section .miniAbout {
     display: flex;
     justify-content: center;
     margin: 0px;
-    overflow: hidden;
     padding-top: 20px;
   }
   #cards {
