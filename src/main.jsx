@@ -10,6 +10,7 @@ import Index from "./pages/index/main"
 import FourOFour from "./pages/404/404"
 import Legal from "./pages/legal/legal"
 import CertifikatyMain from "./pages/certifikaty/main"
+import About from "./pages/about/about"
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
@@ -24,6 +25,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/certificates/html' element={<CertifikatyMain html/>} />
         <Route path='/certificates/python' element={<CertifikatyMain python/>} />
         <Route path='/certificates/linux' element={<CertifikatyMain linux/>} />
+        <Route path='/about' element={<About />} />
 
         <Route path='*' element={<FourOFour />} />
       </Routes>

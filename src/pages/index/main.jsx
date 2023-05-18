@@ -97,6 +97,7 @@ window.onpointermove = event => {
                         <div className="title">{texty["O mě"]}</div>
                         <hr></hr>
                         <p dangerouslySetInnerHTML={{__html: texty["aboutme"]}}></p>
+                        <div className="button"><Link to="/about" className="buttonContainer animation">{texty["more"]}</Link></div>
                     </div>
                 </section>
                 <section id="skills" className="skills">

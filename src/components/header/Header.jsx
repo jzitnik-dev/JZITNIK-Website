@@ -35,6 +35,7 @@ function Header() {
                     <NavLink to="/"><div className="name">Jakub Žitník</div></NavLink>
                     <div className="elements">
                         <NavLink to="/" className="link">{texty["domov"]}</NavLink>
+                        <NavLink to="/about" className="link">{texty["O mě"]}</NavLink>
                         <NavLink to="/certificates" className="link">{texty["certifikaty"]}</NavLink>
                     </div>
                     <div className="navIcon" onClick={toggleMenu}></div>

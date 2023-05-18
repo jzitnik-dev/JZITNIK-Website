@@ -106,7 +106,34 @@ main section .miniAbout {
     color: #ccd6f6;
     font-family: var(--main-font);
 }
-
+.about .element .button .buttonContainer {
+    max-width: fit-content;
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    font-family: var(--main-font);
+    background-color:#17315e;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
+    scale: 1;
+    transition: ease 0.4s scale, opacity 0.2s 0.5s ease, top 0.2s 0.5s ease;
+    opacity: 0;
+    top: -10px;
+    position: relative;
+}
+.about .element .button .buttonContainer.show {
+    opacity: 1;
+    top: 0;
+}
+.about .element .button .buttonContainer:hover {
+    scale: 1.1;
+}
+.about .element .button {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 30px;
+}
 .skills {
     height: auto;
     width: 100%;
