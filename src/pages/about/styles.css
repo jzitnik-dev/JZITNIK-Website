@@ -20,9 +20,11 @@
 }
 .mainAbout .aboutmeStarting .aboutmeContent{
     height: 100%;
-    max-width: 900px;
+    max-width: 800px;
     width: 100%;
-    padding: 60px;
+    padding: 10px;
+    padding-top: 60px;
+    padding-bottom: 87px;
 }
 .mainAbout .aboutmeStarting .aboutmeContent h1 {
     font-size: 50px;

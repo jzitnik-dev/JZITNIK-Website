@@ -25,6 +25,9 @@ function Header() {
                     <Link to="/" className="link">
                         <div className="element" onClick={toggleMenu}>{texty["domov"]}</div>
                     </Link>
+                    <Link to="/about" className="link">
+                        <div className="element" onClick={toggleMenu}>{texty["O mě"]}</div>
+                    </Link>
                     <Link to="/certificates" className="link">
                         <div className="element" onClick={toggleMenu}>{texty["certifikaty"]}</div>
                     </Link>
