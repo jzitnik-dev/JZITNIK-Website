@@ -39,7 +39,6 @@ footer h2 {
 footer .languageSelect {
     display: flex;
     gap: 10px;
-    cursor: pointer;
 }
 footer .vytvoril {
     margin-top: 20px;
