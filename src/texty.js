@@ -155,6 +155,10 @@ const texty = {
     "pockejte": {
         czech: "Prosím počkejte",
         english: "Please wait"
+    },
+    "souborstazen": {
+        czech: "Soubor byl stažen",
+        english: "File is downloaded"
     }
 }
 if (!localStorage.getItem("language")) ((navigator.language || navigator.userLanguage).split("-")[0] == "cs") ? localStorage.setItem("language","czech") : localStorage.setItem("language","english");

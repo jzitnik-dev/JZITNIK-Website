@@ -29,11 +29,11 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/certificates/linux' element={<CertifikatyMain linux/>} />
         <Route path='/about' element={<About />} />
         {urls.map((url) => {
-          return <Route path={url[0]} element={ <Redirect url={url[1]}/>}/>;
+          return <Route path={"/link/"+url[0]} element={ <Redirect url={url[1]}/>}/>;
         })}
         <Route path='*' element={<FourOFour />} />
       </Routes>
       <Footer/>
     </BrowserRouter>
-  </React.StrictMode>,
+  </React.StrictMode>
 )

@@ -1,3 +1,3 @@
 export default [
-    ["test", "https://google.com"]
+    ["adrx", "/download/sablona.c3p"]
 ]
