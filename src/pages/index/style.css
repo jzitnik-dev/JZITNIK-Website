@@ -619,7 +619,7 @@ main section .miniAbout {
     border-radius: 50%;
     background: linear-gradient(to right, aquamarine, mediumpurple);
     animation: rotate 20s infinite;
-    opacity: 0.3;
+    opacity: 0.2;
     position: fixed;
     top: 0;
     z-index: -1;
