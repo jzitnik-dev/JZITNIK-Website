@@ -407,12 +407,6 @@ main section .miniAbout {
   }
   
   
-  h1, h2, h3, h4, span {
-    color: rgb(240, 240, 240);
-    font-family: "Rubik", sans-serif;
-    font-weight: 400;
-    margin: 0px;
-  }
   
   i {  
     color: rgb(240, 240, 240);
