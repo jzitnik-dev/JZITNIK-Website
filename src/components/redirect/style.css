@@ -4,9 +4,23 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: relative;
+    font-family: var(--main-font); 
 }
 .redirectmain .message {
     color: white; 
-    font-family: var(--main-font); 
     font-weight: normal
+}
+.redirectmain .footerUrlshotener {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.redirectmain a {
+    color: white;
+    text-decoration: none;
 }
