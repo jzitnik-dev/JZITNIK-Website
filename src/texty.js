@@ -133,7 +133,7 @@ const texty = {
         english: "I started learning JavaScript in 2021. I was creating programs such as <a href='/download/clickspeed.zip'>Click speed tester (in czech)</a>."
     },
     "klindosAboutMe": {
-        czech: "Na začátku roku 2021 jsem vytvořil svůj největší projek, KLIND OS. Je to 'operační systém' napsaný v JavaScriptu. Na tomto projektu pracuji dodnes. <a href='https://klindos.jzitnik.is-a.dev'>Zobrazit</a>",
+        czech: "Na začátku roku 2021 jsem vytvořil svůj největší projekt, KLIND OS. Je to 'operační systém' napsaný v JavaScriptu. Na tomto projektu pracuji dodnes. <a href='https://klindos.jzitnik.is-a.dev'>Zobrazit</a>",
         english: "At the beginning of 2021, I created my biggest project, KLIND OS. It's an 'operating system' written in JavaScript. I am still working on this project today. <a href='https://klindos.jzitnik.is-a.dev'>View (in czech)</a>"
     },
     "avice": {
