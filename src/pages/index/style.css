@@ -407,6 +407,12 @@ main section .miniAbout {
   }
   
   
+  .card * {
+    color: rgb(240, 240, 240);
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    margin: 0px;
+  }
   
   i {  
     color: rgb(240, 240, 240);
