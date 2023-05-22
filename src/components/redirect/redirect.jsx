@@ -19,7 +19,7 @@ export default (params) => {
             }, []);
             return (
                 <div className="redirectmain content">
-                    <h1 className="message">{texty["pockejte"]}</h1>
+                    <h1 className="message" style={{color: "white"}}>{texty["pockejte"]}</h1>
                     <p className="additionalMessage"></p>
                 </div>
             );
