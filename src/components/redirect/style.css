@@ -5,3 +5,8 @@
     align-items: center;
     flex-direction: column;
 }
+.redirectmain .message {
+    color: white; 
+    font-family: var(--main-font); 
+    font-weight: normal
+}
