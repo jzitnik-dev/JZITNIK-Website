@@ -7,45 +7,6 @@ import Loading from "../../components/loading/Loading"
 import { Link } from "react-router-dom";
 function index() {
     useEffect(() => {
-            var els = document.querySelectorAll(".hover3d")
-            els.forEach(el=> {
-                el.addEventListener('mousemove', handleMove)
-
-                /* Define function a */
-                function handleMove(e) {
-                    /* Get the height and width of the element */
-                    const height = el.offsetHeight
-                    const width = el.offsetWidth
-                    /* Store the x position */
-                    const xVal = e.layerX
-                    /* Store the y position */
-                    const yVal = e.layerY
-
-                    
-                    const yRotation = 10 * ((xVal - width / 2) / width)
-                    const xRotation = -10 * ((yVal - height / 2) / height)
-
-                    
-                    const string = 'perspective(500px) scale(1.09) rotateX(' + xRotation + 'deg) rotateY(' + yRotation + 'deg)'
-                    el.style.transform = string
-                }
-
-                el.addEventListener('mouseout', function() {
-                    el.style.transform = 'perspective(500px) scale(1) rotateX(0) rotateY(0)'
-                })
-
-                /* Add listener for mousedown event, to simulate click */
-                el.addEventListener('mousedown', function() {
-                    el.style.transform = 'perspective(500px) scale(0.95) rotateX(0) rotateY(0)'
-                })
-
-                /* Add listener for mouseup, simulate release of mouse click */
-                el.addEventListener('mouseup', function() {
-                    el.style.transform = 'perspective(500px) scale(1.05) rotateX(0) rotateY(0)'
-                })
-            })
-    }, []);
-    useEffect(() => {
         ScrollAnimation(document.querySelectorAll(".animation"))
         
     }, );
