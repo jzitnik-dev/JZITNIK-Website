@@ -8,8 +8,7 @@ import { Link } from "react-router-dom";
 function index() {
     useEffect(() => {
         ScrollAnimation(document.querySelectorAll(".animation"))
-        
-    }, );
+    },);
     useEffect(() => {
         document.querySelectorAll("#cards").forEach(element => {
             element.onmousemove = e => {
