@@ -24,6 +24,11 @@ main section {
     max-width: 900px;
     width: 100%;
 }
+main section .social {
+    transition: ease 0.6s all;
+    transition-delay: 0.8s;
+    margin-top: 10px;
+}
 main section *.animation {
     opacity: 0;
     top: 20px;
@@ -185,6 +190,7 @@ main section .miniAbout {
 }
 .skills .element .skillsGrid li .name {
     float: left;
+    font-weight: 600;
 }
 .skills .element .skillsGrid li .name .ucimse{
     margin-left: 10px;

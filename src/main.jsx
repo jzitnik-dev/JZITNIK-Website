@@ -12,6 +12,7 @@ import FourOFour from "./pages/404/404"
 import Legal from "./pages/legal/legal"
 import CertifikatyMain from "./pages/certifikaty/main"
 import About from "./pages/about/about"
+import 'boxicons'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(

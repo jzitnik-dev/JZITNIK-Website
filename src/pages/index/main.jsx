@@ -29,13 +29,14 @@ function index() {
             <Loading />
             <div className="content" style={{"display": "none"}}>
                 <main id="particles">
-                    <div className="gradient">
-
-                    </div>
+                    <div className="gradient"></div>
                     <section>
                         <p className="hello animation animationStyles">{texty["Ahoj, já jsem"]}</p>
                         <h2 className="animation animationStyles">Jakub Žitník</h2>
                         <p className="miniAbout animation animationStyles">Full Stack Web Developer</p>
+                        <div className="social animation animationStyles">
+                            <a href='/link/github'><box-icon type="logo" name="github" color='white'></box-icon></a>
+                        </div>
                     </section>
                 </main>
                 <section id="about" className="about">
