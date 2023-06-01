@@ -286,8 +286,41 @@ main section .miniAbout {
     width: 100%;
     margin-top: 30px;
 }
-
-
+.blog {
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+.blog .element {
+    padding: 20px;
+    width: 1201px;
+    max-width: 100%;
+}
+.blog .element .title {
+    color: #57cbff;
+    font-family: "Roboto Mono",monospace, sans-serif;
+    font-size: 40px;
+    position: relative;
+    width: fit-content;
+}
+.blog .element p{
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #ccd6f6;
+    font-family: var(--main-font);
+}
+.posts {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0px;
+    padding-top: 20px;
+  }
 
 .projekty {
     height: auto;

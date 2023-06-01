@@ -12,6 +12,7 @@ import FourOFour from "./pages/404/404"
 import Legal from "./pages/legal/legal"
 import CertifikatyMain from "./pages/certifikaty/main"
 import About from "./pages/about/about"
+import Blog from "./pages/blog/Blog/"
 import 'boxicons'
 
 
@@ -29,6 +30,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path='/certificates/linux' element={<CertifikatyMain linux/>} />
         <Route path='/about' element={<About />} />
         <Route path='/link/*' element={<Redirect url-shortener />} />
+        <Route path='/blog/*' element={<Blog />} />
         <Route path='*' element={<FourOFour />} />
       </Routes>
       <Footer/>

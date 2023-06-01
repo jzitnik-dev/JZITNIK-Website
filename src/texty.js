@@ -159,6 +159,14 @@ const texty = {
     "souborstazen": {
         czech: "Soubor byl stažen",
         english: "File is downloaded"
+    },
+    "prispevky": {
+        czech: "Příspěvky",
+        english: "Blog posts"
+    },
+    "someblog": {
+        czech: "Poslední příspěvky z mého blogu",
+        english: "Latest posts from my blog"
     }
 }
 if (!localStorage.getItem("language")) ((navigator.language || navigator.userLanguage).split("-")[0] == "cs") ? localStorage.setItem("language","czech") : localStorage.setItem("language","english");

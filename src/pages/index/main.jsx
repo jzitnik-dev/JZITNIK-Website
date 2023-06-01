@@ -24,6 +24,24 @@ function index() {
         });
 
     }, []);
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.open( "GET", "https://anxious-tick-onesies.cyclic.app/jzitnik/blog/"+localStorage.getItem("language"), false ); 
+    xmlHttp.send( null );
+    var response = JSON.parse(xmlHttp.responseText)
+    var posts = []
+    if (response.message = "success") {
+        var counter = 0;
+        for (var i in response.data) {
+            counter++
+            if (counter > 3) {
+                break
+            }
+            var id = i
+            var content = response.data[i]
+            posts.push([id, content])
+        }
+    }
+    posts.reverse()
     return (
         <>
             <Loading />
@@ -215,6 +233,35 @@ function index() {
                                         </div>
                                     </div>
                                 </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section className="blog" id="posts">
+                    <div className="element">
+                        <div className="title">{texty["prispevky"]}</div>
+                        <p>{texty["someblog"]}</p>
+                        <div className="posts">
+                            <div id="cards">
+                                {posts.map((e) => {
+                                    return (
+                                        <Link key={e[0]} to={"blog/"+e[0]}>
+                                            <div className="card animation">
+                                                <div className="card-content">
+                                                    <div className="card-info-wrapper">
+                                                        <div className="card-info">
+                                                        <div className="card-info-title">
+                                                            <h3>{e[1].nadpis}</h3>
+                                                            <h4 style={{margin: 0}}>{e[1].user}</h4>
+                                                            <h4>{e[1].text.replace(/<[^>]+>/g,'').trim().split(" ", 20).join(" ")}</h4>
+                                                        </div>    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </Link>
+                                    )
+                                })}
                             </div>
                         </div>
                     </div>
