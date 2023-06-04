@@ -28,9 +28,9 @@ function Header() {
                     <Link to="/about" className="link">
                         <div className="element" onClick={toggleMenu}>{texty["O mě"]}</div>
                     </Link>
-                    <Link to="/blog" className="link">
+                    <a href="/blog" className="link">
                         <div className="element" onClick={toggleMenu}>Blog</div>
-                    </Link>
+                    </a>
                     <Link to="/certificates" className="link">
                         <div className="element" onClick={toggleMenu}>{texty["certifikaty"]}</div>
                     </Link>
@@ -38,11 +38,11 @@ function Header() {
             </div>
             <div className="header">
                 <header style={{top: "0px"}}>
-                    <NavLink to="/"><div className="name">Jakub Žitník</div></NavLink>
+                    <Link to="/"><div className="name">Jakub Žitník</div></Link>
                     <div className="elements">
                         <NavLink to="/" className="link">{texty["domov"]}</NavLink>
                         <NavLink to="/about" className="link">{texty["O mě"]}</NavLink>
-                        <NavLink to="/blog" className="link">Blog</NavLink>
+                        <a href="/blog" className="link">Blog</a>
                         <NavLink to="/certificates" className="link">{texty["certifikaty"]}</NavLink>
                     </div>
                     <div className="navIcon" onClick={toggleMenu}></div>
