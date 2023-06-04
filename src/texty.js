@@ -9,8 +9,8 @@ const texty = {
         czech: "O mě"
     },
     "aboutme": {
-        czech: "Ahoj, jsem Jakub Žitník, Full Stack Web Developer. Můj zájem o programování začal v 9 letech, kdy jsem začal chodit na koužek programování C#. Chytlo mě to! A nyní programuji webové stránky.<br><br>Věřím v technologie zítřka! V ty, které nehází návštěvníkům klacky pod nohy. Ty které přináši to, co návštěvníci chtějí; informace. Mám rád nové, ale přínosné technologie. Nemám rád ty, které vývoj brzdí.",
-        english: "Hello, I'm Jakub Žitník, Full Stack Web Developer. My interest in programming started at the age of 9, when I started attending a C# programming class. I liked it! And now I program websites.<br><br>I believe in the technology of tomorrow. In those that don't throw curve balls at you. The ones that bring what visitors want; information. I like new but helpful technologies.  I don't like ones which slow down evolution."
+        czech: "Ahoj, jsem Jakub Žitník, Full Stack Web Developer a profesionální introvert. Můj zájem o programování začal v 9 letech, kdy jsem začal chodit na koužek programování C#. Chytlo mě to! A nyní programuji webové stránky.<br><br>Věřím v technologie zítřka! V ty, které nehází návštěvníkům klacky pod nohy. Ty které přináši to, co návštěvníci chtějí; informace. Mám rád nové, ale přínosné technologie. Nemám rád ty, které vývoj brzdí.",
+        english: "Hello, I'm Jakub Žitník, Full Stack Web Developer and professional introvert. My interest in programming started at the age of 9, when I started attending a C# programming class. I liked it! And now I program websites.<br><br>I believe in the technology of tomorrow. In those that don't throw curve balls at you. The ones that bring what visitors want; information. I like new but helpful technologies.  I don't like ones which slow down evolution."
     },
     "zkusenosti": {
         czech: "Zkušenosti",
