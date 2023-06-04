@@ -253,7 +253,7 @@ function index() {
                                                         <div className="card-info-title">
                                                             <h3>{e[1].nadpis}</h3>
                                                             <h4 style={{margin: 0}}>{e[1].user}</h4>
-                                                            <h4>{e[1].text.replace(/<[^>]+>/g,'').trim().split(" ", 20).join(" ")}</h4>
+                                                            <h4>{ (e[1].text.replace(/<[^>]+>/g,'').trim().split(" ").length > 20) ?(e[1].text.replace(/<[^>]+>/g,'').trim().split(" ", 20).join(" ")+"...") : (e[1].text.replace(/<[^>]+>/g,'').trim())}</h4>
                                                         </div>    
                                                         </div>
                                                     </div>
