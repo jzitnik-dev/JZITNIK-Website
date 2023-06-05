@@ -211,7 +211,7 @@ main section .miniAbout {
     background-color: #57cbff;
     border-radius: 5px;
     width: 0%;
-    transition: ease-out 0.7s width;
+    transition: ease 0.7s width;
     transition-delay: 0.6s;
 }
 .skills .element .skillsGrid.show .slider .slide.html {width: 95%}
