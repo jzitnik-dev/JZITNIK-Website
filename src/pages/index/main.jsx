@@ -86,7 +86,7 @@ function index() {
                             </li>
                             <li>
                                 <div className="name">React<span className="ucimse">{texty["ucimse"]}</span></div>
-                                <div className="percentage">40%</div>
+                                <div className="percentage">85%</div>
                                 <div className="slider"><div className="slide react"></div></div>
                             </li>
                             <li>
@@ -101,7 +101,7 @@ function index() {
                             </li>
                             <li>
                                 <div className="name">Java<span className="ucimse">{texty["ucimse"]}</span></div>
-                                <div className="percentage">20%</div>
+                                <div className="percentage">80%</div>
                                 <div className="slider"><div className="slide java"></div></div>
                             </li>
                             <li>
@@ -120,8 +120,8 @@ function index() {
                                 <div className="slider"><div className="slide typescript"></div></div>
                             </li>
                             <li>
-                                <div className="name">Git<span className="ucimse">{texty["ucimse"]}</span></div>
-                                <div className="percentage">40%</div>
+                                <div className="name">Git</div>
+                                <div className="percentage">95%</div>
                                 <div className="slider"><div className="slide git"></div></div>
                             </li>
                             <li>

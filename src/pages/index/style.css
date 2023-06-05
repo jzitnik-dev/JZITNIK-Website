@@ -217,14 +217,14 @@ main section .miniAbout {
 .skills .element .skillsGrid.show .slider .slide.html {width: 95%}
 .skills .element .skillsGrid.show .slider .slide.css {width: 70%}
 .skills .element .skillsGrid.show .slider .slide.js {width: 95%}
-.skills .element .skillsGrid.show .slider .slide.react {width: 40%}
+.skills .element .skillsGrid.show .slider .slide.react {width: 85%}
 .skills .element .skillsGrid.show .slider .slide.bash {width: 70%}
 .skills .element .skillsGrid.show .slider .slide.linux {width: 95%}
-.skills .element .skillsGrid.show .slider .slide.java {width: 20%}
+.skills .element .skillsGrid.show .slider .slide.java {width: 80%}
 .skills .element .skillsGrid.show .slider .slide.python {width: 95%}
 .skills .element .skillsGrid.show .slider .slide.php {width: 50%}
 .skills .element .skillsGrid.show .slider .slide.typescript {width: 85%}
-.skills .element .skillsGrid.show .slider .slide.git {width: 40%}
+.skills .element .skillsGrid.show .slider .slide.git {width: 95%}
 .skills .element .skillsGrid.show .slider .slide.sql {width: 65%}
 .skills .element .skillsGrid.show .slider .slide.nodejs {width: 80%}
 @media only screen and (max-width: 600px) {
