@@ -18,6 +18,15 @@
     margin-top: 30px;
     position: relative;
 }
+.blogmain .element.animation {
+    opacity: 0;
+    top: 20px;
+    transition: ease 0.5s 0.2s all;
+}
+.blogmain .element.show {
+    opacity: 1;
+    top: 0;
+}
 .blogmain .element p {
     color: white;
     font-size: 20px;
@@ -48,6 +57,13 @@
     border: 1px solid white;
     border-radius: 10px;
     margin-bottom: 10px;
+    opacity: 0;
+    top: 30px;
+    position: relative;
+}
+.blogmain .prispevky .prispevek.show {
+    opacity: 1;
+    top: 0;
 }
 .blogmain .prispevky .prispevek .info {
     display: flex;

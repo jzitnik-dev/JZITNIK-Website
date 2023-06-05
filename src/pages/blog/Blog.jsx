@@ -2,7 +2,12 @@ import "./blog.css"
 import Loading from "../../components/loading/Loading"
 import Fourofour from "../404/404"
 import texty from "../../texty"
+import ScrollAnimation from "../../scrollAnimation"
+import { useEffect } from "react"
 function Blog() {
+    useEffect(() => {
+        ScrollAnimation(document.querySelectorAll(".animation"))
+    },);
     var url = window.location.href.replaceAll("/","").split("blog")[1]
     var xmlHttp = new XMLHttpRequest();
     xmlHttp.open( "GET", "https://anxious-tick-onesies.cyclic.app/jzitnik/blog/"+localStorage.getItem("language"), false ); 
@@ -28,7 +33,7 @@ function Blog() {
                             <div className="prispevky">
                                 {posts.map((e) => {
                                     return (<a key={e[0]} href={'/blog/'+e[0]}>
-                                        <div className="prispevek">
+                                        <div className="prispevek animation" style={{transition: "ease 0.5s "+(0.2+(0.2/e[0]))+"s all"}}>
                                             <div className="nadpis">{e[1].nadpis}</div>
                                             <div className="info">
                                                 <small className="vytvoril">{e[1].user}</small>
@@ -56,7 +61,7 @@ function Blog() {
                     <Loading />
                     <main className="content blogmain" style={{"display": "none"}}>
                         <div className="monkey">
-                            <div className="element">
+                            <div className="element animation">
                                 <div className="title">{content.nadpis}</div>
                                 <p>{content.user+" "+content.created}</p>
                                 <div className="content" dangerouslySetInnerHTML={{__html: content.text}}></div>

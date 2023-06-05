@@ -19,12 +19,20 @@
     justify-content: center
 }
 .mainAbout .aboutmeStarting .aboutmeContent{
-    height: 100%;
-    max-width: 800px;
-    width: 100%;
-    padding: 10px;
-    padding-top: 60px;
-    padding-bottom: 87px;
+  height: 100%;
+  max-width: 800px;
+  width: 100%;
+  padding: 10px;
+  padding-top: 60px;
+  padding-bottom: 87px;
+  top: 20px;
+  opacity: 0;
+  transition: ease 0.5s 0.3s all;
+  position: relative;
+}
+.mainAbout .aboutmeStarting .aboutmeContent.show {
+  top: 0px;
+  opacity: 1;
 }
 .mainAbout .aboutmeStarting .aboutmeContent h1 {
     font-size: 50px;

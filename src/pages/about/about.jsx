@@ -1,8 +1,12 @@
 import "./styles.css"
 import Loading from "../../components/loading/Loading"
 import { useEffect } from "react";
+import ScrollAnimation from "../../scrollAnimation"
 import texty from "../../texty"
 function about() {
+    useEffect(() => {
+        ScrollAnimation(document.querySelectorAll(".animation"))
+    }, []);
     useEffect(() => {
         let index = 0,
             interval = 1000;
@@ -49,7 +53,7 @@ function about() {
             <Loading />
             <div className="mainAbout content">
                 <div className="aboutmeStarting">
-                    <div className="aboutmeContent">
+                    <div className="aboutmeContent animation">
                         <h1>{texty["O mě"]}</h1>
                         <h2>{texty["zacatky"]}</h2>
                         <p dangerouslySetInnerHTML={{ "__html": texty["longZacatkyAboutMe"] }}></p>
