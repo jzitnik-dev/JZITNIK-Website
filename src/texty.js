@@ -125,7 +125,7 @@ const texty = {
         english: "My beginnings"
     },
     "webdevelAboutMe": {
-        czech: "Protože kroužek C# dále nepokračoval na rok jsem přestal se učit programovat. Stále jsem si programoval svoje programy ale nic nového jsem se neučil. V roce 2020 jsem se rozhodl že se začnu učit vytváření webových stránek. Začal jsem se učit HTML a CSS. Bohužel s této doby nemám žádný projekt.",
+        czech: "Protože kroužek C# dále nepokračoval na rok jsem přestal se učit programovat. Stále jsem si programoval svoje programy ale nic nového jsem se neučil. V roce 2020 jsem se rozhodl že se začnu učit vytváření webových stránek. Začal jsem se učit HTML a CSS. Bohužel z této doby nemám žádný projekt.",
         english: "Since the C# club didn't continue for a year, I stopped learning programming. I was still programming my programs but I wasn't learning anything new. In 2020, I decided to start learning how to create websites. I started learning HTML and CSS. Unfortunately, I don't have any projects at this time."
     },
     "JavaScriptAboutMe": {
