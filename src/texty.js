@@ -167,6 +167,18 @@ const texty = {
     "someblog": {
         czech: "Poslední příspěvky z mého blogu",
         english: "Latest posts from my blog"
+    },
+    "statuspage": {
+        czech: "Status stránka",
+        english: "Status page"
+    },
+    "aboutstatus": {
+        czech: "Stránka na které zjistíte jestli jsou moje stránky dostupné.",
+        english: "Website where you can find if my website is available."
+    },
+    "open": {
+        czech: "Otevřít",
+        english: "Open"
     }
 }
 if (!localStorage.getItem("language")) ((navigator.language || navigator.userLanguage).split("-")[0] == "cs") ? localStorage.setItem("language","czech") : localStorage.setItem("language","english");

@@ -266,6 +266,13 @@ function index() {
                         </div>
                     </div>
                 </section>
+                <section className="status" id="">
+                    <div className="element">
+                        <div className="title">{texty["statuspage"]}</div>
+                        <p>{texty["aboutstatus"]}</p>
+                        <div className="button"><a href="https://status.jzitnik.is-a.dev" target="_blank" className="buttonContainer animation">{texty["open"]}</a></div>
+                    </div>
+                </section>
                 <section className="kontakt" id="contact">
                     <div className="element animation">
                         <div className="title">{texty["kontakt"]}</div>
