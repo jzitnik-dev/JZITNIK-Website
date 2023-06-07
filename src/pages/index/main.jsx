@@ -261,9 +261,9 @@ function index() {
                                         </div>
                                         <div className="card-info-wrapper">
                                             <div className="card-info">
-                                            <div className="card-info-title">
-                                                <h3 style={{"fontSize": "30px"}}>Python</h3>
-                                            </div>    
+                                                <div className="card-info-title">
+                                                    <h3 style={{"fontSize": "30px"}}>Python</h3>
+                                                </div>    
                                             </div>
                                         </div>
                                         </div>
