@@ -117,8 +117,6 @@ function index() {
             console.log(err)
             ScrollAnimation(document.querySelectorAll(".cardanimation"))
         })
-        
-        console.log("something")
     }, []);
 
     return (
