@@ -74,7 +74,7 @@ function index() {
                 </Link>
             </>
         )
-        ScrollAnimation(document.querySelectorAll(".cardanimation"))
+        
         fetch("https://anxious-tick-onesies.cyclic.app/jzitnik/blog/"+localStorage.getItem("language"))
         .then((response) => response.json())
         .then((response) => {
@@ -111,12 +111,13 @@ function index() {
                     )
                 }))
             }
-            ScrollAnimation(document.querySelectorAll(".cardanimation"))
         })
         .catch((err) => {
             console.log(err)
-            ScrollAnimation(document.querySelectorAll(".cardanimation"))
         })
+        setInterval(() => {
+            ScrollAnimation(document.querySelectorAll(".cardanimation"))
+        }, 2000);
     }, []);
 
     return (
