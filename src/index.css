@@ -14,23 +14,6 @@ body {
 html {
     scroll-behavior: smooth;
   }
-  .hover3d {
-    display: block;
-    width: 300px;
-    background-color: grey;
-    margin: 0 auto;
-    transition: box-shadow 0.1s, transform 0.1s;
-    
-    /*
-      * Adding image to the background
-      * No relation to the hover effect.
-      */
-    background-image: url();
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-  
-  .hover3d:hover {
-    box-shadow: 0px 0px 30px rgba(0,0,0, 0.6);
-    cursor: pointer;
-  }
+#root {
+  position: static;
+}

@@ -552,13 +552,35 @@ main section .miniAbout {
     font-size: 1.1em;
     line-height: 20px;
   }
+  .card-info-title > h3.lod {
+    height: 20px;
+    width: 230px;
+    background-color: gray;
+    border-radius: 7px;
+    margin-bottom: 3px;
+  }
   
   .card-info-title > h4 {
     color: rgba(255, 255, 255, 0.5);
     font-size: 0.85em;
     margin-top: 8px;
   }
-  
+  .card-info-title > h4.lod.first {
+    height: 70px;
+    width: 230px;
+    background-color: gray;
+    border-radius: 7px;
+    margin-top: 10px!important;
+
+  }
+  .card-info-title > h4.lod.second {
+    height: 20px;
+    width: 120px;
+    background-color: gray;
+    border-radius: 7px;
+    margin-top: 10px;
+
+  }
   
   
   

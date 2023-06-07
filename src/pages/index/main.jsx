@@ -1,47 +1,126 @@
 import "./style.css"
 import texty from "../../texty"
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import ScrollAnimation from "../../scrollAnimation"
 import sendMail from "./sendMail"
 import Loading from "../../components/loading/Loading"
 import { Link } from "react-router-dom";
 function index() {
+    // Load scroll and card animation
     useEffect(() => {
         ScrollAnimation(document.querySelectorAll(".animation"))
-    },);
-    useEffect(() => {
         document.querySelectorAll("#cards").forEach(element => {
             element.onmousemove = e => {
                 for(const card of document.getElementsByClassName("card")) {
                     const rect = card.getBoundingClientRect(),
                         x = e.clientX - rect.left,
                         y = e.clientY - rect.top;
-              
                     card.style.setProperty("--mouse-x", `${x}px`);
                     card.style.setProperty("--mouse-y", `${y}px`);
                 };
             }
         });
-
     }, []);
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", "https://anxious-tick-onesies.cyclic.app/jzitnik/blog/"+localStorage.getItem("language"), false ); 
-    xmlHttp.send( null );
-    var response = JSON.parse(xmlHttp.responseText)
-    var posts = []
-    if (response.message = "success") {
-        var counter = 0;
-        for (var i in response.data) {
-            counter++
-            if (counter > 3) {
-                break
+
+    // Load posts
+    const [postsjsx, setPostsjsx] = useState([]);
+    useEffect(() => {
+        setPostsjsx(
+            <>
+                <Link>
+                    <div className="card cardanimation">
+                        <div className="card-content">
+                            <div className="card-info-wrapper">
+                                <div className="card-info">
+                                <div className="card-info-title">
+                                    <h3 className="lod"></h3>
+                                    <h4 className="lod first" style={{margin: 0}}></h4>
+                                    <h4 className="lod second"></h4>
+                                </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Link>
+                <Link>
+                    <div className="card cardanimation">
+                        <div className="card-content">
+                            <div className="card-info-wrapper">
+                                <div className="card-info">
+                                <div className="card-info-title">
+                                    <h3 className="lod"></h3>
+                                    <h4 className="lod first" style={{margin: 0}}></h4>
+                                    <h4 className="lod second"></h4>
+                                </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Link>
+                <Link>
+                    <div className="card cardanimation">
+                        <div className="card-content">
+                            <div className="card-info-wrapper">
+                                <div className="card-info">
+                                <div className="card-info-title">
+                                    <h3 className="lod"></h3>
+                                    <h4 className="lod first" style={{margin: 0}}></h4>
+                                    <h4 className="lod second"></h4>
+                                </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </Link>
+            </>
+        )
+        ScrollAnimation(document.querySelectorAll(".cardanimation"))
+        fetch("https://anxious-tick-onesies.cyclic.app/jzitnik/blog/"+localStorage.getItem("language"))
+        .then((response) => response.json())
+        .then((response) => {
+            if (response.message = "success") {
+                var posts = []
+                var counter = 0;
+                for (var i in response.data) {
+                    counter++
+                    if (counter > 3) {
+                        break
+                    }
+                    var id = i
+                    var content = response.data[i]
+                    posts.push([id, content])
+                    posts.reverse()
+                }
+                setPostsjsx(posts.map((e) => {
+                    return (
+                        <Link key={e[0]} to={"blog/"+e[0]}>
+                            <div className="card cardanimation">
+                                <div className="card-content">
+                                    <div className="card-info-wrapper">
+                                        <div className="card-info">
+                                        <div className="card-info-title">
+                                            <h3>{e[1].nadpis}</h3>
+                                            <h4 style={{margin: 0}}>{e[1].user}</h4>
+                                            <h4>{ (e[1].text.replace(/<[^>]+>/g,'').trim().split(" ").length > 20) ?(e[1].text.replace(/<[^>]+>/g,'').trim().split(" ", 20).join(" ")+"...") : (e[1].text.replace(/<[^>]+>/g,'').trim())}</h4>
+                                        </div>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </Link>
+                    )
+                }))
             }
-            var id = i
-            var content = response.data[i]
-            posts.push([id, content])
-        }
-    }
-    posts.reverse()
+            ScrollAnimation(document.querySelectorAll(".cardanimation"))
+        })
+        .catch((err) => {
+            console.log(err)
+            ScrollAnimation(document.querySelectorAll(".cardanimation"))
+        })
+        
+        console.log("something")
+    }, []);
+
     return (
         <>
             <Loading />
@@ -243,25 +322,7 @@ function index() {
                         <p>{texty["someblog"]}</p>
                         <div className="posts">
                             <div id="cards">
-                                {posts.map((e) => {
-                                    return (
-                                        <Link key={e[0]} to={"blog/"+e[0]}>
-                                            <div className="card animation">
-                                                <div className="card-content">
-                                                    <div className="card-info-wrapper">
-                                                        <div className="card-info">
-                                                        <div className="card-info-title">
-                                                            <h3>{e[1].nadpis}</h3>
-                                                            <h4 style={{margin: 0}}>{e[1].user}</h4>
-                                                            <h4>{ (e[1].text.replace(/<[^>]+>/g,'').trim().split(" ").length > 20) ?(e[1].text.replace(/<[^>]+>/g,'').trim().split(" ", 20).join(" ")+"...") : (e[1].text.replace(/<[^>]+>/g,'').trim())}</h4>
-                                                        </div>    
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </Link>
-                                    )
-                                })}
+                                {postsjsx}
                             </div>
                         </div>
                     </div>

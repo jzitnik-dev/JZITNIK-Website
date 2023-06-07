@@ -15,7 +15,6 @@ import About from "./pages/about/about"
 import Blog from "./pages/blog/Blog/"
 import 'boxicons'
 
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
