@@ -1,6 +1,5 @@
 import "./blog.css"
 import Loading from "../../components/loading/Loading"
-import Fourofour from "../404/404"
 import texty from "../../texty"
 import ScrollAnimation from "../../scrollAnimation"
 import { useEffect, useState } from "react"
@@ -45,7 +44,13 @@ function Blog() {
             else {
                 var content = response.data[url]
                 if (!content) {
-                    setPostsjsx(<Fourofour />)
+                    setPostsjsx(
+                        <>
+                            <div className="title">{texty["prispevekNeexistuje"]}</div>
+                            <p>Jakub Žitník</p>
+                            <div className="content">{texty["prispevekNeexistujeMore"]}</div>
+                        </>
+                    )
                 }
                 else {
                     setPostsjsx (

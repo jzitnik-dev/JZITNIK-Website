@@ -179,6 +179,14 @@ const texty = {
     "open": {
         czech: "Otevřít",
         english: "Open"
+    },
+    "prispevekNeexistuje": {
+        czech: "Příspěvek neexistuje",
+        english: "The post does not exist"
+    },
+    "prispevekNeexistujeMore": {
+        czech: "Omlouváme se, příspěvek neexistuje.",
+        english: "Sorry, the post does not exist."
     }
 }
 if (!localStorage.getItem("language")) ((navigator.language || navigator.userLanguage).split("-")[0] == "cs") ? localStorage.setItem("language","czech") : localStorage.setItem("language","english");
