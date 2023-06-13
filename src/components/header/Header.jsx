@@ -65,7 +65,7 @@ function Header() {
                     <Link to="/"><div className="name">Jakub Žitník</div></Link>
                     <div className="elements">
                         <NavLink style={{"width": "50px"}} data-value={texty["domov"]} onMouseOver={hoverEffect} to="/" className="link">{texty["domov"]}</NavLink>
-                        <NavLink style={{"width": "40px"}} data-value={texty["O mě"]} onMouseOver={hoverEffect} to="/about" className="link">{texty["O mě"]}</NavLink>
+                        <NavLink style={{"width": "70px"}} data-value={texty["O mě"]} onMouseOver={hoverEffect} to="/about" className="link">{texty["O mě"]}</NavLink>
                         <a style={{"width": "33px"}} data-value="Blog" onMouseOver={hoverEffect} href="/blog" className="link">Blog</a>
                         <NavLink style={{"width": "74px"}} data-value={texty["certifikaty"]} onMouseOver={hoverEffect} to="/certificates" className="link">{texty["certifikaty"]}</NavLink>
                     </div>
