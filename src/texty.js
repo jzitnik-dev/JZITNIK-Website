@@ -187,6 +187,18 @@ const texty = {
     "prispevekNeexistujeMore": {
         czech: "Omlouváme se, příspěvek neexistuje.",
         english: "Sorry, the post does not exist."
+    },
+    "resume": {
+        czech: "Moje cesta",
+        english: "Resume"
+    },
+    "cemusevenuji": {
+        czech: "Čemu se věnuji?",
+        english: "What do I do?"
+    },
+    "cemusevenujimore": {
+        czech: "Vytvářím vysoce škálovatelné a spolehlivé webové aplikace, programy a skripty. Pracuji s databázemi jako jsou MySQL a MongoDB. Umím vytvořit plně funkční aplikaci včetně designu a funkčnosti.",
+        english: "I build highly scalable and reliable web applications, programs and scripts. I work with databases such as MySQL and MongoDB. I can create fully working application including design and functionality."
     }
 }
 if (!localStorage.getItem("language")) ((navigator.language || navigator.userLanguage).split("-")[0] == "cs") ? localStorage.setItem("language","czech") : localStorage.setItem("language","english");

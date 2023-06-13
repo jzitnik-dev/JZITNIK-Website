@@ -54,7 +54,7 @@ function about() {
             <div className="mainAbout content">
                 <div className="aboutmeStarting">
                     <div className="aboutmeContent animation">
-                        <h1>{texty["O mě"]}</h1>
+                        <h1>{texty["resume"]}</h1>
                         <h2>{texty["zacatky"]}</h2>
                         <p dangerouslySetInnerHTML={{ "__html": texty["longZacatkyAboutMe"] }}></p>
                         <h2>Web development</h2>
@@ -86,6 +86,10 @@ function about() {
                                 <span className="magic-text">{texty["star"]}</span>
                             </span>.
                         </p>
+
+                        <h1 style={{"margin-top": "30px"}}>{texty["O mě"]}</h1>
+                        <h2>{texty["cemusevenuji"]}</h2>
+                        <p>{texty["cemusevenujimore"]}</p>
                     </div>
                 </div>
             </div>
