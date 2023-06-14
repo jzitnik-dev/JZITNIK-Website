@@ -23,17 +23,30 @@ function Router() {
     <BrowserRouter>
       <Header/>
       <Routes>
+        {/* Index */} 
         <Route path='/' element={<Index />} />
-        <Route path='/legal' element={<Legal />} />
+
+        {/* About section */} 
+        <Route path='/about' element={<About />} />
+
+        {/* Certificates */} 
         <Route path='/certificates' element={<CertifikatyMain js html python linux/>} />
         <Route path='/certificates/js' element={<CertifikatyMain js/>} />
         <Route path='/certificates/html' element={<CertifikatyMain html/>} />
         <Route path='/certificates/python' element={<CertifikatyMain python/>} />
         <Route path='/certificates/linux' element={<CertifikatyMain linux/>} />
-        <Route path='/about' element={<About />} />
-        <Route path='/link/*' element={<Redirect url-shortener />} />
+
+        {/* Blog */} 
         <Route path='/blog' element={<Blog />} />
         <Route path='/blog/*' element={<BlogPost />} />
+
+        {/* Url shortener */} 
+        <Route path='/link/*' element={<Redirect url-shortener />} />
+
+        {/* Legal */} 
+        <Route path='/legal' element={<Legal />} />
+
+        {/* 404 page */} 
         <Route path='*' element={<FourOFour />} />
       </Routes>
       <Footer/>
