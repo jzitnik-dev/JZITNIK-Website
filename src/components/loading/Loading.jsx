@@ -1,18 +1,20 @@
 import "./style.css"
 import { useEffect } from "react";
-function Loading() {
+function Loading({fallback}) {
     useEffect(() => {
-        document.querySelector(".loader").classList.add("show")
-        setTimeout(() => {
-            document.querySelector(".loader").classList.remove("show")
+        if (fallback !== true) {
+            document.querySelector(".loader").classList.add("show")
             setTimeout(() => {
-                document.querySelector(".content").style.display = "block"
-                document.querySelector(".loading").classList.remove("show")
+                document.querySelector(".loader").classList.remove("show")
                 setTimeout(() => {
-                    document.querySelector(".loading").style.display = "none"
-                }, 500);
-            }, 300);
-        }, 1000);
+                    document.querySelector(".content").style.display = "block"
+                    document.querySelector(".loading").classList.remove("show")
+                    setTimeout(() => {
+                        document.querySelector(".loading").style.display = "none"
+                    }, 500);
+                }, 300);
+            }, 1000);
+        }
     }, []);
     return (
         <div className="loading show">

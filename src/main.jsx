@@ -1,22 +1,24 @@
-import React from 'react'
+import React, {lazy, Suspense} from 'react'
 import ReactDOM from 'react-dom/client'
 import Header from "./components/header/Header"
 import Footer from "./components/footer/Footer"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css"
-import Redirect from "./components/redirect/redirect"
-
-// Pages
-import Index from "./pages/index/main"
-import FourOFour from "./pages/404/404"
-import Legal from "./pages/legal/legal"
-import CertifikatyMain from "./pages/certifikaty/main"
-import About from "./pages/about/about"
-import Blog from "./pages/blog/Blog/"
+import Loading from "./components/loading/Loading"
+const Redirect = lazy(() => import("./components/redirect/redirect"))
 import 'boxicons'
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+// Pages
+const Index = lazy(() => import("./pages/index/main"))
+const FourOFour = lazy(() => import("./pages/404/404"))
+const Legal = lazy(() => import("./pages/legal/legal"))
+const CertifikatyMain = lazy(() => import("./pages/certifikaty/main"))
+const About = lazy(() => import("./pages/about/about"))
+const Blog = lazy(() => import("./pages/blog/Blog/"))
+
+
+function Router() {
+  return (
     <BrowserRouter>
       <Header/>
       <Routes>
@@ -34,5 +36,12 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       </Routes>
       <Footer/>
     </BrowserRouter>
+  )
+}
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <Suspense fallback={<Loading fallback />}>
+      <Router />
+    </Suspense>
   </React.StrictMode>
 )

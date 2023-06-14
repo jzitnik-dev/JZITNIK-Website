@@ -87,7 +87,7 @@ function about() {
                             </span>.
                         </p>
 
-                        <h1 style={{"margin-top": "30px"}}>{texty["O mě"]}</h1>
+                        <h1 style={{"marginTop": "30px"}}>{texty["O mě"]}</h1>
                         <h2>{texty["cemusevenuji"]}</h2>
                         <p>{texty["cemusevenujimore"]}</p>
                     </div>
