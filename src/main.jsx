@@ -15,6 +15,7 @@ const Legal = lazy(() => import("./pages/legal/legal"))
 const CertifikatyMain = lazy(() => import("./pages/certifikaty/main"))
 const About = lazy(() => import("./pages/about/about"))
 const Blog = lazy(() => import("./pages/blog/Blog/"))
+const BlogPost = lazy(() => import("./pages/blog/BlogPost/"))
 
 
 function Router() {
@@ -31,7 +32,8 @@ function Router() {
         <Route path='/certificates/linux' element={<CertifikatyMain linux/>} />
         <Route path='/about' element={<About />} />
         <Route path='/link/*' element={<Redirect url-shortener />} />
-        <Route path='/blog/*' element={<Blog />} />
+        <Route path='/blog' element={<Blog />} />
+        <Route path='/blog/*' element={<BlogPost />} />
         <Route path='*' element={<FourOFour />} />
       </Routes>
       <Footer/>

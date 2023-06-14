@@ -29,9 +29,9 @@ function Header() {
                     <Link to="/about" className="link">
                         <div className="element" onClick={toggleMenu}>{texty["O mě"]}</div>
                     </Link>
-                    <a href="/blog" className="link">
+                    <Link to="/blog" className="link">
                         <div className="element" onClick={toggleMenu}>Blog</div>
-                    </a>
+                    </Link>
                     <Link to="/certificates" className="link">
                         <div className="element" onClick={toggleMenu}>{texty["certifikaty"]}</div>
                     </Link>
@@ -43,7 +43,7 @@ function Header() {
                     <div className="elements">
                         <NavLink to="/" className="link">{texty["domov"]}</NavLink>
                         <NavLink to="/about" className="link">{texty["O mě"]}</NavLink>
-                        <a href="/blog" className="link">Blog</a>
+                        <NavLink to="/blog" className="link">Blog</NavLink>
                         <NavLink to="/certificates" className="link">{texty["certifikaty"]}</NavLink>
                     </div>
                     <div className="navIcon" onClick={toggleMenu}></div>
