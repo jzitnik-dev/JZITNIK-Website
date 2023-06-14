@@ -199,6 +199,10 @@ const texty = {
     "cemusevenujimore": {
         czech: "Vytvářím vysoce škálovatelné a spolehlivé webové aplikace, programy a skripty. Pracuji s databázemi jako jsou MySQL a MongoDB. Umím vytvořit plně funkční aplikaci včetně designu a funkčnosti.",
         english: "I build highly scalable and reliable web applications, programs and scripts. I work with databases such as MySQL and MongoDB. I can create fully working application including design and functionality."
+    },
+    "aboutLanguager": {
+        czech: "Languager je JavaScriptová knihovka ktera Vám umoží vytvářet webové stránky s více jazyky jednoduše.",
+        english: "Languager is JavaSCript library that helps you easily create multilingual websites."
     }
 }
 if (!localStorage.getItem("language")) ((navigator.language || navigator.userLanguage).split("-")[0] == "cs") ? localStorage.setItem("language","czech") : localStorage.setItem("language","english");

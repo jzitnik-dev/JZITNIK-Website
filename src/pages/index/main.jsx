@@ -312,6 +312,21 @@ function index() {
                                         </div>
                                     </div>
                                 </a>
+                                <a href="https://github.com/JZITNIK-github/Languager"  target="_blank">
+                                    <div className="card animation">
+                                        <div className="card-content">
+                                        
+                                        <div className="card-info-wrapper">
+                                            <div className="card-info">
+                                            <div className="card-info-title">
+                                                <h3>Languager [English]</h3>  
+                                                <h4>{texty["aboutLanguager"]}</h4>
+                                            </div>    
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
