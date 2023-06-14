@@ -1,12 +1,13 @@
 import React, {lazy, Suspense} from 'react'
 import ReactDOM from 'react-dom/client'
-import Header from "./components/header/Header"
-import Footer from "./components/footer/Footer"
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./index.css"
+import 'boxicons'
+
+import Header from "./components/header/Header"
+import Footer from "./components/footer/Footer"
 import Loading from "./components/loading/Loading"
 const Redirect = lazy(() => import("./components/redirect/redirect"))
-import 'boxicons'
 
 // Pages
 const Index = lazy(() => import("./pages/index/main"))
