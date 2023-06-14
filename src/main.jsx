@@ -7,7 +7,6 @@ import 'boxicons'
 import Header from "./components/header/Header"
 import Footer from "./components/footer/Footer"
 import Loading from "./components/loading/Loading"
-const Redirect = lazy(() => import("./components/redirect/redirect"))
 
 // Pages
 const Index = lazy(() => import("./pages/index/main"))
@@ -17,6 +16,7 @@ const CertifikatyMain = lazy(() => import("./pages/certifikaty/main"))
 const About = lazy(() => import("./pages/about/about"))
 const Blog = lazy(() => import("./pages/blog/Blog/"))
 const BlogPost = lazy(() => import("./pages/blog/BlogPost/"))
+const Redirect = lazy(() => import("./components/redirect/redirect"))
 
 
 function Router() {
