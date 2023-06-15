@@ -61,3 +61,4 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     </Suspense>
   </React.StrictMode>
 )
+console.log('%cWhat are you doing here? You sneaky developer.', 'color: #32ffce');
