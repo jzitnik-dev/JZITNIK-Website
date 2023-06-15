@@ -17,9 +17,9 @@ function Footer() {
                 </div>
                 
                 <p className="vytvoril">
-                    Made with
+                    {texty["madewith"]}
                     <box-icon name='heart' type='solid' color="red" style={{position: "relative",top: "6px", marginLeft: "2px", marginRight: "2px"}}></box-icon>
-                    in Czech Republic
+                    {texty["inczechia"]}
                     
                     <p style={{top: 2, position: "relative"}}>{texty["vytvoril"]} <span style={{color: "#57cbff"}}>Jakub Žitník</span></p>
                 </p>

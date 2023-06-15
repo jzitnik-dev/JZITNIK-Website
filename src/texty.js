@@ -203,6 +203,14 @@ const texty = {
     "aboutLanguager": {
         czech: "Languager je JavaScriptová knihovka ktera Vám umoží vytvářet webové stránky s více jazyky jednoduše.",
         english: "Languager is JavaScript library that helps you easily create multilingual websites."
+    },
+    "madewith": {
+        czech: "Vytvořeno s",
+        english: "Made with"
+    },
+    "inczechia": {
+        czech: "v České Republice",
+        english: "in Czech Republic"
     }
 }
 if (!localStorage.getItem("language")) ((navigator.language || navigator.userLanguage).split("-")[0] == "cs") ? localStorage.setItem("language","czech") : localStorage.setItem("language","english");
