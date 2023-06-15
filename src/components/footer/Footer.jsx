@@ -15,7 +15,14 @@ function Footer() {
                     <a href="#" onClick={()=>{switchLanguage("english")}}>English</a>
                     <a href="#" onClick={()=>{switchLanguage("czech")}}>Čeština</a>
                 </div>
-                <p className="vytvoril">{texty["vytvoril"]} <span style={{color: "#57cbff"}}>Jakub Žitník</span></p>
+                
+                <p className="vytvoril">
+                    Made with
+                    <box-icon name='heart' type='solid' color="red" style={{position: "relative",top: "6px", marginLeft: "2px", marginRight: "2px"}}></box-icon>
+                    in Czech Republic
+                    
+                    <p style={{top: 2, position: "relative"}}>{texty["vytvoril"]} <span style={{color: "#57cbff"}}>Jakub Žitník</span></p>
+                </p>
             </div>
         </footer>
     )
