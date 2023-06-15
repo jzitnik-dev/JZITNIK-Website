@@ -9,14 +9,14 @@ import Footer from "./components/footer/Footer"
 import Loading from "./components/loading/Loading"
 
 // Pages
-const Index = lazy(() => import("./pages/index/main"))
-const FourOFour = lazy(() => import("./pages/404/404"))
-const Legal = lazy(() => import("./pages/legal/legal"))
+const Index =           lazy(() => import("./pages/index/main"))
+const FourOFour =       lazy(() => import("./pages/404/404"))
+const Legal =           lazy(() => import("./pages/legal/legal"))
 const CertifikatyMain = lazy(() => import("./pages/certifikaty/main"))
-const About = lazy(() => import("./pages/about/about"))
-const Blog = lazy(() => import("./pages/blog/Blog/"))
-const BlogPost = lazy(() => import("./pages/blog/BlogPost/"))
-const Redirect = lazy(() => import("./components/redirect/redirect"))
+const About =           lazy(() => import("./pages/about/about"))
+const Blog =            lazy(() => import("./pages/blog/Blog/"))
+const BlogPost =        lazy(() => import("./pages/blog/BlogPost/"))
+const Redirect =        lazy(() => import("./components/redirect/redirect"))
 
 
 function Router() {
