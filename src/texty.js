@@ -141,8 +141,8 @@ const texty = {
         english: "And more"
     },
     "aviceAboutMe": {
-        czech: "Získal jsem několik <a href='/certificates'>certifikátů</a>. Naučil jsem se hodné nových programovacích jazyků. Vytvořil jsem hodně projektů a zlepšil se v programování. Programování beru jako koníček. Baví mě a rád se zlepšuji. Vytvořil jsem si <a href='https://github.com/JZITNIK-github'>GitHub</a> kde nahrávám své kódy. Pokud by jste mě chtěli podpořit, dejte nějakému repozitáři ",
-        english: "I have obtained several <a href='/certificates'>certificates</a>. I learned a lot of new programming languages. I created a lot of projects and got better at programming. I take programming as a hobby. I enjoy it and I like to improve. I created a <a href='https://github.com/JZITNIK-github'>GitHub</a> where I upload my codes. If you would like to support me, give some of my repositories a "
+        czech: "Získal jsem několik <a href='/certificates'>certifikátů</a>. Naučil jsem se hodné nových programovacích jazyků. Vytvořil jsem hodně projektů a zlepšil se v programování. Programování beru jako koníček. Baví mě a rád se zlepšuji. Vytvořil jsem si <a href='/link/github'>GitHub</a> kde nahrávám své kódy. Pokud by jste mě chtěli podpořit, dejte nějakému repozitáři ",
+        english: "I have obtained several <a href='/certificates'>certificates</a>. I learned a lot of new programming languages. I created a lot of projects and got better at programming. I take programming as a hobby. I enjoy it and I like to improve. I created a <a href='/link/github'>GitHub</a> where I upload my codes. If you would like to support me, give some of my repositories a "
     },
     "star": {
         czech: "hvězdu",
