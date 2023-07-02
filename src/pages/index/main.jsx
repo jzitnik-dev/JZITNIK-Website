@@ -89,8 +89,8 @@ function index() {
                     var id = i
                     var content = response.data[i]
                     posts.push([id, content])
-                    posts.reverse()
                 }
+                posts.reverse()
                 setPostsjsx(posts.map((e) => {
                     return (
                         <Link key={e[0]} to={"blog/"+e[0]}>
