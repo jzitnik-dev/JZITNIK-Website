@@ -2,8 +2,8 @@ import "./style.css"
 import { useEffect } from "react";
 function Loading({fallback}) {
     useEffect(() => {
+        document.querySelectorAll(".loader").forEach(el => el.classList.add("show"))
         if (fallback !== true) {
-            document.querySelector(".loader").classList.add("show")
             setTimeout(() => {
                 document.querySelector(".loader").classList.remove("show")
                 setTimeout(() => {
