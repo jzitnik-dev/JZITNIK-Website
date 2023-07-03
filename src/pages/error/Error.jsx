@@ -1,5 +1,4 @@
 import "./style.css"
-import texty from "../../texty"
 import Loading from "../../components/loading/Loading"
 function Error() {
     return (
@@ -7,8 +6,9 @@ function Error() {
             <Loading />
             <div className="content" style={{"display":"none"}}>
                 <div className="mainerror">
-                    <h1>{texty["error"]}</h1>
-                    <p>{texty["errormore"]}</p>
+                    <h1>Error!</h1>
+                    <p>EN: Error occured while loading the page.</p>
+                    <p>CS: Nastala chyba při načítání stránky.</p>
                 </div>
             </div>
         </>
