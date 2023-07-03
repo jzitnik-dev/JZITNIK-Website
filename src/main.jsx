@@ -7,6 +7,8 @@ import 'boxicons'
 import Header from "./components/header/Header"
 import Footer from "./components/footer/Footer"
 import Loading from "./components/loading/Loading"
+import ErrorPage from "./pages/error/Error"
+import ErrorBoundary from "./components/errorboundary/ErrorBoundary"
 
 // Pages
 const Index =           lazy(() => import("./pages/index/main"))
@@ -56,9 +58,11 @@ function Router() {
 }
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Suspense fallback={<Loading fallback />}>
-      <Router />
-    </Suspense>
+    <ErrorBoundary fallback={<ErrorPage />}>
+      <Suspense fallback={<Loading fallback />}>
+        <Router />
+      </Suspense>
+    </ErrorBoundary>
   </React.StrictMode>
 )
 console.log('%cWhat are you doing here? You sneaky developer.', 'color: #32ffce');

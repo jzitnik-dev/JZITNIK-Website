@@ -1,0 +1,17 @@
+.mainerror {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+    color: white;
+    font-family: var(--main-font);
+}
+.mainerror h1 {
+    font-size: 150px;
+}
+.mainerror p {
+    font-size: 20px;
+}
