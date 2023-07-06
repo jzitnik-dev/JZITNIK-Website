@@ -211,6 +211,10 @@ const texty = {
     "inczechia": {
         czech: "v České Republice",
         english: "in Czech Republic"
+    },
+    "pages": {
+        czech: "Stránky",
+        english: "Pages"
     }
 }
 if (!localStorage.getItem("language")) ((navigator.language || navigator.userLanguage).split("-")[0] == "cs") ? localStorage.setItem("language","czech") : localStorage.setItem("language","english");

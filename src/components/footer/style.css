@@ -1,7 +1,6 @@
 footer {
     width: 100%;
     height: 250px;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,9 +25,36 @@ footer .elements {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
     z-index: 1;
 }
+footer .elements .left {
+    height: 100%;
+    max-width: 450px;
+    width: 60%;
+    float: left;
+    position: relative;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+footer .elements .left .copyright{
+    margin-top: auto;
+}
+footer .elements .right {
+    height: 100%;
+    max-width: 300px;
+    width: 40%;
+    float: left;
+    position: relative;
+    padding-top: 20px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
 footer a {
     color: #57cbff;
     text-decoration: none;
@@ -38,8 +64,26 @@ footer h2 {
 }
 footer .languageSelect {
     display: flex;
-    gap: 10px;
+    gap: 10px
 }
-footer .vytvoril {
-    margin-top: 20px;
+footer .pagesSelect {
+    display: flex;
+    gap: 10px
+}
+footer .legal {
+    margin-top: auto;
+}
+@media only screen and (max-width: 750px) {
+    footer .name {
+        margin-top: auto;
+    }
+    footer .languagechange {
+        margin-top: auto;
+    }
+    footer .pages {
+        display: none;
+    }
+    footer .kontakty {
+        display: none;
+    }
 }
