@@ -19,6 +19,7 @@ const About =           lazy(() => import("./pages/about/about"))
 const Blog =            lazy(() => import("./pages/blog/Blog/"))
 const BlogPost =        lazy(() => import("./pages/blog/BlogPost/"))
 const Redirect =        lazy(() => import("./components/redirect/redirect"))
+const Technologie =     lazy(() => import("./pages/technologie/Technologie"))
 
 
 function Router() {
@@ -48,6 +49,9 @@ function Router() {
 
         {/* Legal */}
         <Route path='/legal' element={<Legal />} />
+
+        {/* Technologie */}
+        <Route path='/technologies' element={<Technologie />} />
 
         {/* 404 page */}
         <Route path='*' element={<FourOFour />} />

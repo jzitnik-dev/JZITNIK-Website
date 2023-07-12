@@ -215,6 +215,14 @@ const texty = {
     "pages": {
         czech: "Stránky",
         english: "Pages"
+    },
+    "technologie": {
+        czech: "Technologie",
+        english: "Technologies"
+    },
+    "technologiepouzivam": {
+        czech: "Technologie, které používám",
+        english: "Technologies I use"
     }
 }
 if (!localStorage.getItem("language")) ((navigator.language || navigator.userLanguage).split("-")[0] == "cs") ? localStorage.setItem("language","czech") : localStorage.setItem("language","english");

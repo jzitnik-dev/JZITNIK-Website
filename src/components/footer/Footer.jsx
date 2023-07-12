@@ -25,7 +25,7 @@ function Footer() {
                 <div className="right">
                     
                     <div className="languagechange">
-                        <h2>{texty["zmenitJazyky"]}</h2>
+                        <h2 style={{"margin": "0"}}>{texty["zmenitJazyky"]}</h2>
                         <div className="languageSelect">
                             <a href="#" onClick={()=>{switchLanguage("english")}}>English</a>
                             <a href="#" onClick={()=>{switchLanguage("czech")}}>Čeština</a>
