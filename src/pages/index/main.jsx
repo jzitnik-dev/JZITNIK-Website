@@ -2,16 +2,100 @@ import "./style.css"
 import texty from "../../texty"
 import { useEffect, useState } from "react";
 import ScrollAnimation from "../../scrollAnimation"
-import sendMail from "./sendMail"
 import Loading from "../../components/loading/Loading"
 import { Link } from "react-router-dom";
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.min.css';
+
+
+var sendMail = () => {
+    document.querySelector(".contactElement .messages .load").style.display = "flex";
+    setTimeout(() => {
+        var name = document.querySelector("#name").value;
+        var email = document.querySelector("#email").value;
+        var message = document.querySelector("#message").value;
+
+        if (name.length != 0 && message.length != 0 && email.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
+            fetch("https://anxious-tick-onesies.cyclic.app/jzitnik/sendmail", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': "application/json; charset=utf-8"
+                },
+                body: JSON.stringify({
+                    'name': name,
+                    'email': email,
+                    'message': message
+                }),
+            })
+                .then(res => res.json())
+                .then(res => {
+                    setTimeout(() => {
+                        if (res["message"] == "success") {
+                            document.querySelector(".contactElement .messages .load").style.display = "none";
+                            toast.success(texty["bylaodeslanaformular"], {
+                                position: "top-right",
+                                autoClose: 5000,
+                                hideProgressBar: false,
+                                closeOnClick: true,
+                                pauseOnHover: true,
+                                draggable: true,
+                                progress: undefined,
+                                theme: "dark",
+                            });
+                        }
+                        else {
+                            document.querySelector(".contactElement .messages .load").style.display = "none";
+                            toast.error(texty["nastalachybaformular"], {
+                                position: "top-right",
+                                autoClose: 5000,
+                                hideProgressBar: false,
+                                closeOnClick: true,
+                                pauseOnHover: true,
+                                draggable: true,
+                                progress: undefined,
+                                theme: "dark",
+                            });
+                        }
+                    }, "1500")
+                })
+                .catch(() => {
+                    document.querySelector(".contactElement .messages .load").style.display = "none";
+                    toast.error(texty["nastalachybaformular"], {
+                        position: "top-right",
+                        autoClose: 5000,
+                        hideProgressBar: false,
+                        closeOnClick: true,
+                        pauseOnHover: true,
+                        draggable: true,
+                        progress: undefined,
+                        theme: "dark",
+                    });
+                })
+        }
+        else {
+            document.querySelector(".contactElement .messages .load").style.display = "none";
+            toast.error(texty["spatneVyplnenyFormular"], {
+                position: "top-right",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: true,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "dark",
+            });
+        }
+    }, 500);
+}
+
 function index() {
     // Load scroll and card animation
     useEffect(() => {
         ScrollAnimation(document.querySelectorAll(".animation"))
         document.querySelectorAll("#cards").forEach(element => {
             element.onmousemove = e => {
-                for(const card of document.getElementsByClassName("card")) {
+                for (const card of document.getElementsByClassName("card")) {
                     const rect = card.getBoundingClientRect(),
                         x = e.clientX - rect.left,
                         y = e.clientY - rect.top;
@@ -32,11 +116,11 @@ function index() {
                         <div className="card-content">
                             <div className="card-info-wrapper">
                                 <div className="card-info">
-                                <div className="card-info-title">
-                                    <h3 className="lod"></h3>
-                                    <h4 className="lod first" style={{margin: 0}}></h4>
-                                    <h4 className="lod second"></h4>
-                                </div>    
+                                    <div className="card-info-title">
+                                        <h3 className="lod"></h3>
+                                        <h4 className="lod first" style={{ margin: 0 }}></h4>
+                                        <h4 className="lod second"></h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -47,11 +131,11 @@ function index() {
                         <div className="card-content">
                             <div className="card-info-wrapper">
                                 <div className="card-info">
-                                <div className="card-info-title">
-                                    <h3 className="lod"></h3>
-                                    <h4 className="lod first" style={{margin: 0}}></h4>
-                                    <h4 className="lod second"></h4>
-                                </div>    
+                                    <div className="card-info-title">
+                                        <h3 className="lod"></h3>
+                                        <h4 className="lod first" style={{ margin: 0 }}></h4>
+                                        <h4 className="lod second"></h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -62,11 +146,11 @@ function index() {
                         <div className="card-content">
                             <div className="card-info-wrapper">
                                 <div className="card-info">
-                                <div className="card-info-title">
-                                    <h3 className="lod"></h3>
-                                    <h4 className="lod first" style={{margin: 0}}></h4>
-                                    <h4 className="lod second"></h4>
-                                </div>    
+                                    <div className="card-info-title">
+                                        <h3 className="lod"></h3>
+                                        <h4 className="lod first" style={{ margin: 0 }}></h4>
+                                        <h4 className="lod second"></h4>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -74,47 +158,47 @@ function index() {
                 </Link>
             </>
         )
-        
-        fetch("https://anxious-tick-onesies.cyclic.app/jzitnik/blog/"+localStorage.getItem("language"))
-        .then((response) => response.json())
-        .then((response) => {
-            if (response.message = "success") {
-                var posts = []
-                var counter = 0;
-                for (var i in response.data) {
-                    counter++
-                    if (counter > 3) {
-                        break
+
+        fetch("https://anxious-tick-onesies.cyclic.app/jzitnik/blog/" + localStorage.getItem("language"))
+            .then((response) => response.json())
+            .then((response) => {
+                if (response.message = "success") {
+                    var posts = []
+                    var counter = 0;
+                    for (var i in response.data) {
+                        counter++
+                        if (counter > 3) {
+                            break
+                        }
+                        var id = i
+                        var content = response.data[i]
+                        posts.push([id, content])
                     }
-                    var id = i
-                    var content = response.data[i]
-                    posts.push([id, content])
-                }
-                posts.reverse()
-                setPostsjsx(posts.map((e) => {
-                    return (
-                        <Link key={e[0]} to={"blog/"+e[0]}>
-                            <div className="card cardanimation">
-                                <div className="card-content">
-                                    <div className="card-info-wrapper">
-                                        <div className="card-info">
-                                        <div className="card-info-title">
-                                            <h3>{e[1].nadpis}</h3>
-                                            <h4 style={{margin: 0}}>{e[1].user}</h4>
-                                            <h4>{ (e[1].text.replace(/<[^>]+>/g,'').trim().split(" ").length > 20) ?(e[1].text.replace(/<[^>]+>/g,'').trim().split(" ", 20).join(" ")+"...") : (e[1].text.replace(/<[^>]+>/g,'').trim())}</h4>
-                                        </div>    
+                    posts.reverse()
+                    setPostsjsx(posts.map((e) => {
+                        return (
+                            <Link key={e[0]} to={"blog/" + e[0]}>
+                                <div className="card cardanimation">
+                                    <div className="card-content">
+                                        <div className="card-info-wrapper">
+                                            <div className="card-info">
+                                                <div className="card-info-title">
+                                                    <h3>{e[1].nadpis}</h3>
+                                                    <h4 style={{ margin: 0 }}>{e[1].user}</h4>
+                                                    <h4>{(e[1].text.replace(/<[^>]+>/g, '').trim().split(" ").length > 20) ? (e[1].text.replace(/<[^>]+>/g, '').trim().split(" ", 20).join(" ") + "...") : (e[1].text.replace(/<[^>]+>/g, '').trim())}</h4>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </Link>
-                    )
-                }))
-            }
-        })
-        .catch((err) => {
-            console.log(err)
-        })
+                            </Link>
+                        )
+                    }))
+                }
+            })
+            .catch((err) => {
+                console.log(err)
+            })
         setInterval(() => {
             ScrollAnimation(document.querySelectorAll(".cardanimation"))
         }, 2000);
@@ -123,7 +207,19 @@ function index() {
     return (
         <>
             <Loading />
-            <div className="content" style={{"display": "none"}}>
+            <div className="content" style={{ "display": "none" }}>
+                <ToastContainer
+                    position="top-right"
+                    autoClose={5000}
+                    hideProgressBar={false}
+                    newestOnTop
+                    closeOnClick
+                    rtl={false}
+                    pauseOnFocusLoss
+                    draggable
+                    pauseOnHover
+                    theme="dark"
+                />
                 <main id="particles">
                     <div className="gradient"></div>
                     <section>
@@ -140,7 +236,7 @@ function index() {
                     <div className="element animation">
                         <div className="title">{texty["O mě"]}</div>
                         <hr></hr>
-                        <p dangerouslySetInnerHTML={{__html: texty["aboutme"]}}></p>
+                        <p dangerouslySetInnerHTML={{ __html: texty["aboutme"] }}></p>
                         <div className="button"><Link to="/about" className="buttonContainer animation">{texty["more"]}</Link></div>
                     </div>
                 </section>
@@ -224,48 +320,48 @@ function index() {
                                 <Link to="/certificates/js">
                                     <div className="card animation">
                                         <div className="card-content">
-                                        <div className="card-image">
-                                            <img src="/images/js_code.png"></img>
-                                        </div>
-                                        <div className="card-info-wrapper">
-                                            <div className="card-info">
-                                            <div className="card-info-title">
-                                                <h3 style={{"fontSize": "30px"}}>JavaScript</h3>
-                                            </div>    
+                                            <div className="card-image">
+                                                <img src="/images/js_code.png"></img>
                                             </div>
-                                        </div>
+                                            <div className="card-info-wrapper">
+                                                <div className="card-info">
+                                                    <div className="card-info-title">
+                                                        <h3 style={{ "fontSize": "30px" }}>JavaScript</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </Link>
                                 <Link to="/certificates/html">
                                     <div className="card animation">
                                         <div className="card-content">
-                                        <div className="card-image">
-                                            <img src="/images/html_code.png"></img>
-                                        </div>
-                                        <div className="card-info-wrapper">
-                                            <div className="card-info">
-                                            <div className="card-info-title">
-                                                <h3 style={{"fontSize": "30px"}}>HTML</h3>
-                                            </div>    
+                                            <div className="card-image">
+                                                <img src="/images/html_code.png"></img>
                                             </div>
-                                        </div>
+                                            <div className="card-info-wrapper">
+                                                <div className="card-info">
+                                                    <div className="card-info-title">
+                                                        <h3 style={{ "fontSize": "30px" }}>HTML</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </Link>
                                 <Link to="/certificates/python">
                                     <div className="card animation">
                                         <div className="card-content">
-                                        <div className="card-image">
-                                            <img src="/images/python_code.png"></img>
-                                        </div>
-                                        <div className="card-info-wrapper">
-                                            <div className="card-info">
-                                                <div className="card-info-title">
-                                                    <h3 style={{"fontSize": "30px"}}>Python</h3>
-                                                </div>    
+                                            <div className="card-image">
+                                                <img src="/images/python_code.png"></img>
                                             </div>
-                                        </div>
+                                            <div className="card-info-wrapper">
+                                                <div className="card-info">
+                                                    <div className="card-info-title">
+                                                        <h3 style={{ "fontSize": "30px" }}>Python</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </Link>
@@ -283,47 +379,47 @@ function index() {
                                 <a href="https://klindos.jzitnik.is-a.dev" target="_blank">
                                     <div className="card animation">
                                         <div className="card-content">
-                                        <div className="card-image">
-                                            <img src="/images/klindos.jpg"></img>
-                                        </div>
-                                        <div className="card-info-wrapper">
-                                            <div className="card-info">
-                                            <div className="card-info-title">
-                                                <h3>KLIND OS [Czech]</h3>  
-                                                <h4>{texty["aboutKLINDOS"]}</h4>
-                                            </div>    
+                                            <div className="card-image">
+                                                <img src="/images/klindos.jpg"></img>
                                             </div>
-                                        </div>
+                                            <div className="card-info-wrapper">
+                                                <div className="card-info">
+                                                    <div className="card-info-title">
+                                                        <h3>KLIND OS [Czech]</h3>
+                                                        <h4>{texty["aboutKLINDOS"]}</h4>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </a>
-                                <a href="https://github.com/JZITNIK-github/automatic-bio-changer"  target="_blank">
+                                <a href="https://github.com/JZITNIK-github/automatic-bio-changer" target="_blank">
                                     <div className="card animation">
                                         <div className="card-content">
-                                        
-                                        <div className="card-info-wrapper">
-                                            <div className="card-info">
-                                            <div className="card-info-title">
-                                                <h3>Automatic bio changer [English]</h3>  
-                                                <h4>{texty["aboutABC"]}</h4>
-                                            </div>    
+
+                                            <div className="card-info-wrapper">
+                                                <div className="card-info">
+                                                    <div className="card-info-title">
+                                                        <h3>Automatic bio changer [English]</h3>
+                                                        <h4>{texty["aboutABC"]}</h4>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
                                         </div>
                                     </div>
                                 </a>
-                                <a href="https://github.com/JZITNIK-github/Languager"  target="_blank">
+                                <a href="https://github.com/JZITNIK-github/Languager" target="_blank">
                                     <div className="card animation">
                                         <div className="card-content">
-                                        
-                                        <div className="card-info-wrapper">
-                                            <div className="card-info">
-                                            <div className="card-info-title">
-                                                <h3>Languager [English]</h3>  
-                                                <h4>{texty["aboutLanguager"]}</h4>
-                                            </div>    
+
+                                            <div className="card-info-wrapper">
+                                                <div className="card-info">
+                                                    <div className="card-info-title">
+                                                        <h3>Languager [English]</h3>
+                                                        <h4>{texty["aboutLanguager"]}</h4>
+                                                    </div>
+                                                </div>
                                             </div>
-                                        </div>
                                         </div>
                                     </div>
                                 </a>
@@ -355,14 +451,12 @@ function index() {
                         <p>{texty["totoKontakt"]}</p>
                         <div className="contactElement">
                             <div className="row">
-                                <input id="name" type="text" placeholder={texty["jmeno"]}/>
-                                <input id="email" type="text" placeholder="Email"/>
+                                <input id="name" type="text" placeholder={texty["jmeno"]} />
+                                <input id="email" type="text" placeholder="Email" />
                             </div>
                             <textarea id="message" placeholder={texty["zprava"]}></textarea>
                             <div className="messages">
-                                <div className="load" style={{"display": "none"}}>{texty["prosimpockejte"]}</div>
-                                <div className="success" style={{"display": "none"}}>{texty["bylaodeslanaformular"]}</div>
-                                <div className="error" errorspatnevyplneny={texty["spatneVyplnenyFormular"]} errorother={texty["nastalachybaformular"]} style={{"display": "none"}}>error</div>
+                                <div className="load" style={{ "display": "none" }}>{texty["prosimpockejte"]}</div>
                             </div>
                             <input onClick={sendMail} className="submit" type="submit" value={texty["submit"]} />
                         </div>
