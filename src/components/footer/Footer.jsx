@@ -39,6 +39,7 @@ function Footer() {
                             <Link to="/about">{texty["O mě"]}</Link>
                             <Link to="/blog">Blog</Link>
                             <Link to="/certificates">{texty["certifikaty"]}</Link>
+                            <Link to="/technologies">{texty["technologie"]}</Link>
                         </div>
                     </div>
 

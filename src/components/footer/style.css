@@ -66,9 +66,11 @@ footer .languageSelect {
     display: flex;
     gap: 10px
 }
-footer .pagesSelect {
-    display: flex;
-    gap: 10px
+footer .pagesSelect a {
+    margin-right: 6px;
+    margin-top: 3px;
+    display: block;
+    float: left;
 }
 footer .legal {
     margin-top: auto;
