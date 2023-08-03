@@ -18,7 +18,7 @@ const CertifikatyMain = lazy(() => import("./pages/certifikaty/main"))
 const About =           lazy(() => import("./pages/about/about"))
 const Blog =            lazy(() => import("./pages/blog/Blog/"))
 const BlogPost =        lazy(() => import("./pages/blog/BlogPost/"))
-const Redirect =        lazy(() => import("./components/redirect/redirect"))
+const UrlShortener =        lazy(() => import("./components/urlshortener/UrlShortener"))
 const Technologie =     lazy(() => import("./pages/technologie/Technologie"))
 
 
@@ -45,7 +45,7 @@ function Router() {
         <Route path='/blog/*' element={<BlogPost />} />
 
         {/* Url shortener */}
-        <Route path='/link/*' element={<Redirect url-shortener />} />
+        <Route path='/link/:link' element={<UrlShortener />} />
 
         {/* Legal */}
         <Route path='/legal' element={<Legal />} />
