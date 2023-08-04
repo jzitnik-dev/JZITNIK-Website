@@ -9,8 +9,8 @@ const texty = {
         czech: "O mě"
     },
     "aboutme": {
-        czech: "Ahoj, jsem Jakub Žitník, Full Stack Web Developer. Můj zájem o programování začal v 9 letech, kdy jsem začal chodit na koužek programování C#.<br><br>Vytvářím vysoce škálovatelné a spolehlivé webové aplikace, programy a skripty. Pracuji s databázemi jako jsou MySQL a MongoDB. Umím vytvořit plně funkční aplikaci včetně designu a funkčnosti.",
-        english: "Hello, I'm Jakub Žitník, Full Stack Web Developer. My interest in programming started at the age of 9, when I started attending a C# programming class.<br><br>I build highly scalable and reliable web applications, programs and scripts. I work with databases such as MySQL and MongoDB. I can create fully working application including design and functionality."
+        czech: "Ahoj, jmenuji se Jakub Žitník, Full Stack Web Developer.<br><br>Vytvářím vysoce škálovatelné a spolehlivé webové aplikace, programy a skripty. Pracuji s databázemi jako jsou MySQL a MongoDB. Umím vytvořit plně funkční aplikaci včetně designu a funkčnosti.",
+        english: "Hello, I'm Jakub Žitník, Full Stack Web Developer.<br><br>I build highly scalable and reliable web applications, programs and scripts. I work with databases such as MySQL and MongoDB. I can create fully working application including design and functionality."
     },
     "zkusenosti": {
         czech: "Zkušenosti",
@@ -117,32 +117,28 @@ const texty = {
         english: "Welcome"
     },
     "longZacatkyAboutMe": {
-        czech: "Už v 6 letech mě bavily počítače. Vytvářel jsem si 'programy' v excelu a powerpointu s interaktivními prvky jako například tlačítky. <a download href='/download/KLINDOWS 2.1.pptx'>Stáhnout</a><br>V té době jsem chtěl umět víc. Chtel jsem aby ten program mohl upravovat soubory a další věci. To ale PowerPoint nepodporuje.<br><br>V roce 2018 jsem začal poprvé programovat. Začal jsem chodit do kroužku programování C#. Bavilo mě to. Vytvářel jsem si svoje konzolové aplikace i aplikace s uživatelským rozhraním. <a download href='/download/app.zip'>Stáhnout</a>",
-        english: "I was already interested in computers at the age of 6. I was creating 'programs' in excel and powerpoint with interactive elements such as buttons. <a download href='/download/KLINDOWS 2.1.pptx'>Download (in czech)</a><br>At that time I wanted to know more. I wanted the program to be able to edit files and more. But PowerPoint doesn't support that.<br><br>In 2018, I started programming for the first time. I started going to a C# programming club. I enjoyed that. I was creating my own console applications as well as user interface applications. <a download href='/download/app.zip'>Download (in czech)</a>"
+        czech: "Už v 6 letech mě bavily počítače. Vytvářel jsem si 'programy' v excelu a powerpointu s interaktivními prvky jako například tlačítky. <a download href='/download/KLINDOWS 2.1.pptx'>Stáhnout</a><br><br>V roce 2018 jsem začal poprvé programovat. Začal jsem chodit do kroužku programování C#. Vytvářel jsem si svoje konzolové aplikace i aplikace s uživatelským rozhraním.",
+        english: "I was already interested in computers at the age of 6. I was creating 'programs' in excel and powerpoint with interactive elements such as buttons. <a download href='/download/KLINDOWS 2.1.pptx'>Download (in czech)</a><br><br>In 2018, I started programming for the first time. I started going to a C# programming club. I was creating my own console applications as well as user interface applications. <a download href='/download/app.zip'>Download (in czech)</a>"
     },
     "zacatky": {
         czech: "Začátky",
         english: "My beginnings"
     },
     "webdevelAboutMe": {
-        czech: "Protože kroužek C# dále nepokračoval na rok jsem přestal se učit programovat. Stále jsem si programoval svoje programy ale nic nového jsem se neučil. V roce 2020 jsem se rozhodl že se začnu učit vytváření webových stránek. Začal jsem se učit HTML a CSS. Bohužel z této doby nemám žádný projekt.",
-        english: "Since the C# club didn't continue for a year, I stopped learning programming. I was still programming my programs but I wasn't learning anything new. In 2020, I decided to start learning how to create websites. I started learning HTML and CSS. Unfortunately, I don't have any projects at this time."
+        czech: "V roce 2020 jsem se začal učit vytváření webových stránek. Začal jsem se učit HTML a CSS.",
+        english: "In 2020, I started learning how to create websites. I started learning HTML and CSS."
     },
     "JavaScriptAboutMe": {
-        czech: "V roce 2021 jsem se začal učit JavaScript. Vytvářel jsem si prográmky jako například <a href='/download/clickspeed.zip'>Click speed tester</a>.",
+        czech: "V roce 2021 jsem se začal učit JavaScript. Vytvářel jsem si programy jako například <a href='/download/clickspeed.zip'>Click speed tester</a>.",
         english: "I started learning JavaScript in 2021. I was creating programs such as <a href='/download/clickspeed.zip'>Click speed tester (in czech)</a>."
-    },
-    "klindosAboutMe": {
-        czech: "Na začátku roku 2021 jsem vytvořil svůj největší projekt, KLIND OS. Je to 'operační systém' napsaný v JavaScriptu. Na tomto projektu pracuji dodnes. <a href='https://klindos.jzitnik.is-a.dev'>Zobrazit</a>",
-        english: "At the beginning of 2021, I created my biggest project, KLIND OS. It's an 'operating system' written in JavaScript. I am still working on this project today. <a href='https://klindos.jzitnik.is-a.dev'>View (in czech)</a>"
     },
     "avice": {
         czech: "A více",
         english: "And more"
     },
     "aviceAboutMe": {
-        czech: "Získal jsem několik <a href='/certificates'>certifikátů</a>. Naučil jsem se hodně nových programovacích jazyků. Vytvořil jsem hodně projektů a zlepšil se v programování. Programování beru jako koníček. Baví mě a rád se zlepšuji. Vytvořil jsem si <a href='/link/github'>GitHub</a> kde nahrávám své kódy. Pokud by jste mě chtěli podpořit, dejte nějakému repozitáři ",
-        english: "I have obtained several <a href='/certificates'>certificates</a>. I learned a lot of new programming languages. I created a lot of projects and got better at programming. I take programming as a hobby. I enjoy it and I like to improve. I created a <a href='/link/github'>GitHub</a> where I upload my codes. If you would like to support me, give some of my repositories a "
+        czech: "Získal jsem několik <a href='/certificates'>certifikátů</a>. Naučil jsem se hodně nových programovacích jazyků. Vytvořil jsem hodně projektů a zlepšil se v programování. Vytvořil jsem si <a href='/link/github'>GitHub</a> kde nahrávám své kódy. Pokud by jste mě chtěli podpořit, dejte nějakému repozitáři ",
+        english: "I have obtained several <a href='/certificates'>certificates</a>. I learned a lot of new programming languages. I created a lot of projects and got better at programming. I created a <a href='/link/github'>GitHub</a> where I upload my codes. If you would like to support me, give some of my repositories a "
     },
     "star": {
         czech: "hvězdu",
@@ -197,8 +193,8 @@ const texty = {
         english: "What do I do?"
     },
     "cemusevenujimore": {
-        czech: "Vytvářím vysoce škálovatelné a spolehlivé webové aplikace, programy a skripty. Pracuji s databázemi jako jsou MySQL a MongoDB. Umím vytvořit plně funkční aplikaci včetně designu a funkčnosti.",
-        english: "I build highly scalable and reliable web applications, programs and scripts. I work with databases such as MySQL and MongoDB. I can create fully working application including design and functionality."
+        czech: "Vytvářím vysoce škálovatelné a spolehlivé webové aplikace, programy a skripty. Pracuji s databázemi jako jsou MySQL. Umím vytvořit plně funkční aplikaci včetně designu a funkčnosti. Mám zkušenosti s React, NextJS, NodeJS a Python. Programuji už 5 let. Web developmentu se věnuji 3 roky.",
+        english: "I build highly scalable and reliable web applications, programs and scripts. I work with databases such as MySQL. I can create fully working application including design and functionality. I have experience with React, NextJS, NodeJS and Python. I have been programming for 5 years. I have been involved in web development for 3 years."
     },
     "aboutLanguager": {
         czech: "Languager je JavaScriptová knihovka ktera Vám umoží vytvářet webové stránky s více jazyky jednoduše.",

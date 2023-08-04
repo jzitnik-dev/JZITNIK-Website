@@ -54,15 +54,19 @@ function about() {
             <div className="mainAbout content">
                 <div className="aboutmeStarting">
                     <div className="aboutmeContent animation">
-                        <h1>{texty["resume"]}</h1>
+
+                        <h1>{texty["O mě"]}</h1>
+                        <h2>{texty["cemusevenuji"]}</h2>
+                        <p>{texty["cemusevenujimore"]}</p>
+
+
+                        <h1 style={{"marginTop": "30px"}}>{texty["resume"]}</h1>
                         <h2>{texty["zacatky"]}</h2>
                         <p dangerouslySetInnerHTML={{ "__html": texty["longZacatkyAboutMe"] }}></p>
                         <h2>Web development</h2>
                         <p dangerouslySetInnerHTML={{ "__html": texty["webdevelAboutMe"] }}></p>
                         <h2>JavaScript</h2>
                         <p dangerouslySetInnerHTML={{ "__html": texty["JavaScriptAboutMe"] }}></p>
-                        <h2>KLIND OS</h2>
-                        <p dangerouslySetInnerHTML={{ "__html": texty["klindosAboutMe"] }}></p>
                         <h2>{texty["avice"]}</h2>
                         <p>
                             <span dangerouslySetInnerHTML={{ "__html": texty["aviceAboutMe"] }}></span>
@@ -87,9 +91,7 @@ function about() {
                             </span>.
                         </p>
 
-                        <h1 style={{"marginTop": "30px"}}>{texty["O mě"]}</h1>
-                        <h2>{texty["cemusevenuji"]}</h2>
-                        <p>{texty["cemusevenujimore"]}</p>
+                        
                     </div>
                 </div>
             </div>

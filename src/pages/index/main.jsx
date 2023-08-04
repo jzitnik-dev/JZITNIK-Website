@@ -251,7 +251,7 @@ function index() {
                             </li>
                             <li>
                                 <div className="name">CSS</div>
-                                <div className="percentage">70%</div>
+                                <div className="percentage">80%</div>
                                 <div className="slider"><div className="slide css"></div></div>
                             </li>
                             <li>
@@ -260,24 +260,14 @@ function index() {
                                 <div className="slider"><div className="slide js"></div></div>
                             </li>
                             <li>
-                                <div className="name">React<span className="ucimse">{texty["ucimse"]}</span></div>
-                                <div className="percentage">85%</div>
+                                <div className="name">React</div>
+                                <div className="percentage">95%</div>
                                 <div className="slider"><div className="slide react"></div></div>
                             </li>
                             <li>
-                                <div className="name">Bash</div>
-                                <div className="percentage">70%</div>
-                                <div className="slider"><div className="slide bash"></div></div>
-                            </li>
-                            <li>
-                                <div className="name">Linux</div>
-                                <div className="percentage">95%</div>
-                                <div className="slider"><div className="slide linux"></div></div>
-                            </li>
-                            <li>
-                                <div className="name">Java<span className="ucimse">{texty["ucimse"]}</span></div>
-                                <div className="percentage">80%</div>
-                                <div className="slider"><div className="slide java"></div></div>
+                                <div className="name">Next.js</div>
+                                <div className="percentage">90%</div>
+                                <div className="slider"><div className="slide nextjs"></div></div>
                             </li>
                             <li>
                                 <div className="name">Python</div>
@@ -285,9 +275,19 @@ function index() {
                                 <div className="slider"><div className="slide python"></div></div>
                             </li>
                             <li>
-                                <div className="name">PHP</div>
-                                <div className="percentage">50%</div>
-                                <div className="slider"><div className="slide php"></div></div>
+                                <div className="name">Git</div>
+                                <div className="percentage">95%</div>
+                                <div className="slider"><div className="slide git"></div></div>
+                            </li>
+                            <li>
+                                <div className="name">Linux</div>
+                                <div className="percentage">95%</div>
+                                <div className="slider"><div className="slide linux"></div></div>
+                            </li>
+                            <li>
+                                <div className="name">Node JS</div>
+                                <div className="percentage">90%</div>
+                                <div className="slider"><div className="slide nodejs"></div></div>
                             </li>
                             <li>
                                 <div className="name">TypeScript</div>
@@ -295,9 +295,14 @@ function index() {
                                 <div className="slider"><div className="slide typescript"></div></div>
                             </li>
                             <li>
-                                <div className="name">Git</div>
-                                <div className="percentage">95%</div>
-                                <div className="slider"><div className="slide git"></div></div>
+                                <div className="name">Java<span className="ucimse">{texty["ucimse"]}</span></div>
+                                <div className="percentage">80%</div>
+                                <div className="slider"><div className="slide java"></div></div>
+                            </li>
+                            <li>
+                                <div className="name">Bash</div>
+                                <div className="percentage">70%</div>
+                                <div className="slider"><div className="slide bash"></div></div>
                             </li>
                             <li>
                                 <div className="name">SQL</div>
@@ -305,9 +310,9 @@ function index() {
                                 <div className="slider"><div className="slide sql"></div></div>
                             </li>
                             <li>
-                                <div className="name">Node JS</div>
-                                <div className="percentage">80%</div>
-                                <div className="slider"><div className="slide nodejs"></div></div>
+                                <div className="name">PHP</div>
+                                <div className="percentage">40%</div>
+                                <div className="slider"><div className="slide php"></div></div>
                             </li>
                         </ul>
                     </div>

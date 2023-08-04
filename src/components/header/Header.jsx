@@ -6,13 +6,13 @@ function Header() {
     useEffect(() => {
         var previousScroll = 0;
         window.addEventListener("scroll",() => {
-            if (window.pageYOffset > previousScroll) {
+            if (window.scrollY > previousScroll) {
                 document.querySelector("header").style.top = "-50px";
             }
             else {
                 document.querySelector("header").style.top = "0"
             }
-            previousScroll = window.pageYOffset;
+            previousScroll = window.scrollY;
         })
     }, []);
     function toggleMenu() {
