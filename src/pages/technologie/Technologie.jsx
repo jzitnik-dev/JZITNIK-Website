@@ -33,6 +33,7 @@ function Technologie() {
         "md": "https://en.wikipedia.org/wiki/Markdown",
         "mongodb": "https://www.mongodb.com/",
         "mysql": "https://www.mysql.com/",
+        "nextjs": "https://nextjs.org/",
         "nodejs": "https://www.nodejs.org/",
         "php": "https://www.php.net/",
         "py": "https://python.org/",
