@@ -3,17 +3,18 @@ import Loading from "../../components/loading/Loading"
 import texty from "../../texty"
 import ScrollAnimation from "../../scrollAnimation"
 import { useEffect, useState } from "react"
+import { useParams } from "react-router-dom"
 function Blog() {
     useEffect(() => {
         ScrollAnimation(document.querySelectorAll(".animation"))
     },);
-    const [postsjsx, setPostsjsx] = useState([])
+    const [postsjsx, setPostsjsx] = useState()
+    var { blog } = useParams();
     useEffect(() => {
-        var url = window.location.href.replaceAll("/","").split("blog")[1]
         fetch("https://anxious-tick-onesies.cyclic.app/jzitnik/blog/"+localStorage.getItem("language"))
         .then(res=>res.json())
         .then(response=> {
-            var content = response.data[url]
+            var content = response.data[blog]
             if (!content) {
                 setPostsjsx(
                     <>

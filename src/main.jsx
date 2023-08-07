@@ -42,7 +42,7 @@ function Router() {
 
         {/* Blog */} 
         <Route path='/blog' element={<Blog />} />
-        <Route path='/blog/*' element={<BlogPost />} />
+        <Route path='/blog/:blog' element={<BlogPost />} />
 
         {/* Url shortener */}
         <Route path='/link/:link' element={<UrlShortener />} />
