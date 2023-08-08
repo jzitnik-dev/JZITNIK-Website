@@ -117,7 +117,7 @@ const texty = {
         english: "Welcome"
     },
     "longZacatkyAboutMe": {
-        czech: "Už v 6 letech mě bavily počítače. Vytvářel jsem si 'programy' v excelu a powerpointu s interaktivními prvky jako například tlačítky. <a download href='/download/KLINDOWS 2.1.pptx'>Stáhnout</a><br><br>V roce 2018 jsem začal poprvé programovat. Začal jsem chodit do kroužku programování C#. Vytvářel jsem si svoje konzolové aplikace i aplikace s uživatelským rozhraním.",
+        czech: "Už v 6 letech mě bavily počítače. Vytvářel jsem si 'programy' v excelu a powerpointu s interaktivními prvky jako například tlačítky. <a download href='/download/KLINDOWS 2.1.pptx'>Stáhnout</a><br><br>V roce 2018 jsem začal poprvé programovat. Začal jsem chodit do kroužku programování C#. Vytvářel jsem si svoje konzolové aplikace i aplikace s uživatelským rozhraním. <a download href='/download/app.zip'>Stáhnout</a>",
         english: "I was already interested in computers at the age of 6. I was creating 'programs' in excel and powerpoint with interactive elements such as buttons. <a download href='/download/KLINDOWS 2.1.pptx'>Download (in czech)</a><br><br>In 2018, I started programming for the first time. I started going to a C# programming club. I was creating my own console applications as well as user interface applications. <a download href='/download/app.zip'>Download (in czech)</a>"
     },
     "zacatky": {
