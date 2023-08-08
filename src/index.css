@@ -1,15 +1,18 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-weight: normal;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: normal;
 }
+
 body {
   background-color: var(--background-color);
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 #root {
   position: static;
 }
@@ -17,7 +20,7 @@ html {
 /* Variables */
 :root {
   --background-color: #040615;
-  --main-font: "Inter","San Francisco", sans-serif;
+  --main-font: "Inter", "San Francisco", sans-serif;
 }
 
 /* Custom scrollbar */
@@ -33,9 +36,11 @@ body::-webkit-scrollbar-thumb {
   background-color: #57cbff;
 
 }
+
 body::-webkit-scrollbar-thumb:hover {
   background-color: #4db0dd;
 }
+
 body::-webkit-scrollbar-track {
   background-color: var(--background-color);
 }
