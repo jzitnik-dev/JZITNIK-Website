@@ -17,7 +17,7 @@ var sendMail = () => {
         var message = document.querySelector("#message").value;
 
         if (name.length != 0 && message.length != 0 && email.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
-            fetch("https://anxious-tick-onesies.cyclic.app/jzitnik/sendmail", {
+            fetch("https://backend-92l0.onrender.com/jzitnik/sendmail", {
                 method: 'POST',
                 headers: {
                     'Content-Type': "application/json; charset=utf-8"
@@ -159,7 +159,7 @@ function index() {
             </>
         )
 
-        fetch("https://anxious-tick-onesies.cyclic.app/jzitnik/blog/" + localStorage.getItem("language"))
+        fetch("https://backend-92l0.onrender.com/jzitnik/blog/" + localStorage.getItem("language"))
             .then((response) => response.json())
             .then((response) => {
                 if (response.message = "success") {

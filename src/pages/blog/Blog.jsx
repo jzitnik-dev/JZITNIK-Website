@@ -11,7 +11,7 @@ function Blog() {
     const [postsjsx, setPostsjsx] = useState([])
     useEffect(() => {
         var url = window.location.href.replaceAll("/","").split("blog")[1]
-        fetch("https://anxious-tick-onesies.cyclic.app/jzitnik/blog/"+localStorage.getItem("language"))
+        fetch("https://backend-92l0.onrender.com/jzitnik/blog/"+localStorage.getItem("language"))
         .then(res=>res.json())
         .then(response=> {
             var posts = []

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Fourofour from "../../pages/404/404"
 import { useParams } from "react-router-dom";
 
-const BACKEND = "https://anxious-tick-onesies.cyclic.app/jzitnik/geturl/"
+const BACKEND = "https://backend-92l0.onrender.com/jzitnik/geturl/"
 
 function Redirect() {
     const [message, setMessage] = useState(texty["pockejte"])
