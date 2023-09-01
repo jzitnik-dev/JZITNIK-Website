@@ -225,7 +225,7 @@ function index() {
                     <section>
                         <p className="hello animation animationStyles">{texty["Ahoj, já jsem"]}</p>
                         <h2 className="animation animationStyles">Jakub Žitník</h2>
-                        <p className="miniAbout animation animationStyles">Full Stack Web Developer</p>
+                        <p className="miniAbout animation animationStyles">{texty["fullstack"]}</p>
                         <div className="social animation animationStyles">
                             <a href='/link/github'><box-icon type="logo" name="github" color='white'></box-icon></a>
                             <a href='/link/instagram'><box-icon type="logo" name="instagram" color='white'></box-icon></a>

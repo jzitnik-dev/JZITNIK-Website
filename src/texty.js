@@ -219,6 +219,10 @@ const texty = {
     "technologiepouzivam": {
         czech: "Technologie, které používám",
         english: "Technologies I use"
+    },
+    "fullstack": {
+        czech: "Full Stack Web Developer a nadšenec do technologií",
+        english: "Full Stack Web Developer and tech enthusiast"
     }
 }
 if (!localStorage.getItem("language")) ((navigator.language || navigator.userLanguage).split("-")[0] == "cs") ? localStorage.setItem("language","czech") : localStorage.setItem("language","english");
