@@ -221,7 +221,7 @@ const texty = {
         english: "Technologies I use"
     },
     "fullstack": {
-        czech: "Full Stack Web Developer a nadšenec do technologií",
+        czech: "Full Stack Web Developer",
         english: "Full Stack Web Developer and tech enthusiast"
     }
 }
