@@ -6,7 +6,7 @@ const texty = {
     },
     "O mě": {
         english: "About me",
-        czech: "O mě"
+        czech: "O mně"
     },
     "aboutme": {
         czech: "Ahoj, jmenuji se Jakub Žitník, Full Stack Web Developer.<br><br>Vytvářím vysoce škálovatelné a spolehlivé webové aplikace, programy a skripty. Pracuji s databázemi jako jsou MySQL a MongoDB. Umím vytvořit plně funkční aplikaci včetně designu a funkčnosti.",
