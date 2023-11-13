@@ -229,6 +229,7 @@ function index() {
                         <div className="social animation animationStyles">
                             <a href='/link/github'><box-icon type="logo" name="github" color='white'></box-icon></a>
                             <a href='/link/instagram'><box-icon type="logo" name="instagram" color='white'></box-icon></a>
+                            <a href='/link/youtube'><box-icon type="logo" name="youtube" color='white'></box-icon></a>
                         </div>
                     </section>
                 </main>
