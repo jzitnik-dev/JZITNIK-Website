@@ -33,6 +33,7 @@ function Technologie() {
         "md": "https://en.wikipedia.org/wiki/Markdown",
         "mongodb": "https://www.mongodb.com/",
         "mysql": "https://www.mysql.com/",
+        "neovim": "https://neovim.io/",
         "nextjs": "https://nextjs.org/",
         "nodejs": "https://www.nodejs.org/",
         "php": "https://www.php.net/",
@@ -43,6 +44,7 @@ function Technologie() {
         "stackoverflow": "https://stackoverflow.com/",
         "tailwind": "https://tailwindcss.com/",
         "ts": "https://www.typescriptlang.org/",
+        "vim": "https://www.vim.org/",
         "vite": "https://vitejs.dev/",
         "vscode": "https://code.visualstudio.com/",
     }
