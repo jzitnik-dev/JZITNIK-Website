@@ -221,7 +221,8 @@ main section .miniAbout {
 .skills .element .skillsGrid.show .slider .slide.react {width: 95%}
 .skills .element .skillsGrid.show .slider .slide.bash {width: 70%}
 .skills .element .skillsGrid.show .slider .slide.linux {width: 95%}
-.skills .element .skillsGrid.show .slider .slide.java {width: 80%}
+.skills .element .skillsGrid.show .slider .slide.java {width: 90%}
+.skills .element .skillsGrid.show .slider .slide.spring {width: 30%}
 .skills .element .skillsGrid.show .slider .slide.python {width: 95%}
 .skills .element .skillsGrid.show .slider .slide.php {width: 40%}
 .skills .element .skillsGrid.show .slider .slide.typescript {width: 85%}
