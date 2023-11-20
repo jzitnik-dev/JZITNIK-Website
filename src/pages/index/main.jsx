@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import ScrollAnimation from "../../scrollAnimation"
 import Loading from "../../components/loading/Loading"
 import { Link } from "react-router-dom";
+import Config from "../../config"
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
@@ -17,7 +18,7 @@ var sendMail = () => {
         var message = document.querySelector("#message").value;
 
         if (name.length != 0 && message.length != 0 && email.match(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/)) {
-            fetch("https://backend.jzitnik.is-a.dev/jzitnik/sendmail", {
+            fetch(Config.backend + "jzitnik/sendmail", {
                 method: 'POST',
                 headers: {
                     'Content-Type': "application/json; charset=utf-8"
@@ -159,7 +160,7 @@ function index() {
             </>
         )
 
-        fetch("https://backend.jzitnik.is-a.dev/jzitnik/blog/" + localStorage.getItem("language"))
+        fetch(Config.backend + "jzitnik/blog/" + localStorage.getItem("language"))
             .then((response) => response.json())
             .then((response) => {
                 if (response.message = "success") {
@@ -391,7 +392,7 @@ function index() {
                                     <div className="card animation">
                                         <div className="card-content">
                                             <div className="card-image">
-                                                <img src="/images/klindos.jpg"></img>
+                                                <img src="/images/klindos.png"></img>
                                             </div>
                                             <div className="card-info-wrapper">
                                                 <div className="card-info">

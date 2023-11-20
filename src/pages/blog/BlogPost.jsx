@@ -4,6 +4,8 @@ import texty from "../../texty"
 import ScrollAnimation from "../../scrollAnimation"
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
+import Config from "../../config"
+import { Interweave } from 'interweave';
 function Blog() {
     useEffect(() => {
         ScrollAnimation(document.querySelectorAll(".animation"))
@@ -11,7 +13,7 @@ function Blog() {
     const [postsjsx, setPostsjsx] = useState()
     var { blog } = useParams();
     useEffect(() => {
-        fetch("https://backend.jzitnik.is-a.dev/jzitnik/blog/"+localStorage.getItem("language"))
+        fetch(Config.backend + "jzitnik/blog/"+localStorage.getItem("language"))
         .then(res=>res.json())
         .then(response=> {
             var content = response.data[blog]
@@ -29,10 +31,12 @@ function Blog() {
                     <>
                         <div className="title">{content.nadpis}</div>
                         <p>{content.user+" "+content.created}</p>
-                        <div className="content" dangerouslySetInnerHTML={{__html: content.text}}></div>
+                        <div className="content">
+                          <Interweave content={content.text}></Interweave>
+                        </div>
                     </>
                 )
-            }
+            } 
         })
     },[])
     return (

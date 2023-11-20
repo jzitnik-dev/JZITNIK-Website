@@ -3,7 +3,9 @@ import Loading from "../../components/loading/Loading"
 import { Link } from "react-router-dom"
 import texty from "../../texty"
 import ScrollAnimation from "../../scrollAnimation"
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
+import Config from "../../config";
+import { Markup } from 'interweave';
 function Blog() {
     useEffect(() => {
         ScrollAnimation(document.querySelectorAll(".animation"))
@@ -11,7 +13,7 @@ function Blog() {
     const [postsjsx, setPostsjsx] = useState([])
     useEffect(() => {
         var url = window.location.href.replaceAll("/","").split("blog")[1]
-        fetch("https://backend.jzitnik.is-a.dev/jzitnik/blog/"+localStorage.getItem("language"))
+        fetch(Config.backend + "jzitnik/blog/"+localStorage.getItem("language"))
         .then(res=>res.json())
         .then(response=> {
             var posts = []
@@ -33,7 +35,7 @@ function Blog() {
                                         <small className="vytvoril">{e[1].user}</small>
                                         <small className="vytvoreno">{e[1].created}</small>
                                     </div>
-                                    <div className="text">{e[1].text.split(" ").length > 40 ? e[1].text.replace(/<[^>]+>/g,'').trim().split(" ", 40).join(" ")+"..." : e[1].text.replace(/<[^>]+>/g,'')}</div>
+                                    <div className="text"><Markup content={e[1].text}></Markup></div>
                                 </div>
                             </Link>)
                         })}

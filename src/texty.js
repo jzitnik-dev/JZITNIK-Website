@@ -8,9 +8,13 @@ const texty = {
         english: "About me",
         czech: "O mně"
     },
+    "cemusevenujimore": {
+        czech: "Vytvářím vysoce škálovatelné a spolehlivé webové aplikace, programy a skripty. Pracuji s databázemi jako jsou MySQL. Umím vytvořit plně funkční aplikaci včetně designu a funkčnosti. Mám zkušenosti s React, NextJS, NodeJS a Python. Programuji už 5 let. Web developmentu se věnuji 3 roky.",
+        english: "I build highly scalable and reliable web applications, programs and scripts. I work with databases such as MySQL. I can create fully working application including design and functionality. I have experience with React, NextJS, NodeJS and Python. I have been programming for 5 years. I have been involved in web development for 3 years."
+    },
     "aboutme": {
-        czech: "Ahoj, jmenuji se Jakub Žitník, Full Stack Web Developer.<br><br>Vytvářím vysoce škálovatelné a spolehlivé webové aplikace, programy a skripty. Pracuji s databázemi jako jsou MySQL a MongoDB. Umím vytvořit plně funkční aplikaci včetně designu a funkčnosti.",
-        english: "Hello, I'm Jakub Žitník, Full Stack Web Developer.<br><br>I build highly scalable and reliable web applications, programs and scripts. I work with databases such as MySQL and MongoDB. I can create fully working application including design and functionality."
+        czech: "Ahoj, jmenuji se Jakub Žitník, Full Stack Web Developer.<br><br>Vytvářím vysoce škálovatelné a spolehlivé webové aplikace, programy a skripty. Pracuji s databázemi jako jsou MySQL. Umím vytvořit plně funkční aplikaci včetně designu a funkčnosti. Mám zkušenosti s React, NextJS, NodeJS a Python. Programuji už 5 let. Web developmentu se věnuji 3 roky.",
+        english: "Hello, I'm Jakub Žitník, Full Stack Web Developer.<br><br>I build highly scalable and reliable web applications, programs and scripts. I work with databases such as MySQL. I can create fully working application including design and functionality. I have experience with React, NextJS, NodeJS and Python. I have been programming for 5 years. I have been involved in web development for 3 years."
     },
     "zkusenosti": {
         czech: "Zkušenosti",
@@ -132,13 +136,25 @@ const texty = {
         czech: "V roce 2021 jsem se začal učit JavaScript. Vytvářel jsem si programy jako například <a href='/download/clickspeed.zip'>Click speed tester</a>.",
         english: "I started learning JavaScript in 2021. I was creating programs such as <a href='/download/clickspeed.zip'>Click speed tester (in czech)</a>."
     },
-    "avice": {
-        czech: "A více",
-        english: "And more"
+    "webdevelopment": {
+        czech: "Web development",
+        english: "Web development"
     },
-    "aviceAboutMe": {
-        czech: "Získal jsem několik <a href='/certificates'>certifikátů</a>. Naučil jsem se hodně nových programovacích jazyků. Vytvořil jsem hodně projektů a zlepšil se v programování. Vytvořil jsem si <a href='/link/github'>GitHub</a> kde nahrávám své kódy. Pokud by jste mě chtěli podpořit, dejte nějakému repozitáři ",
-        english: "I have obtained several <a href='/certificates'>certificates</a>. I learned a lot of new programming languages. I created a lot of projects and got better at programming. I created a <a href='/link/github'>GitHub</a> where I upload my codes. If you would like to support me, give some of my repositories a "
+    "webdevelopmentmore": {
+        czech: "Získal jsem několik <a href='/certificates'>certifikátů</a>. Začal naučil jsem se hodně technologií týkajících se web developmentu. Také jsem si vytvořil <a href='/link/github'>GitHub</a> kde nahrávám svoje projekty.",
+        english: "I have obtained several <a href='/certificates'>certificates</a>. I started learning a lot of technologies related to web development. I also created <a href='/link/github'>GitHub</a> where I upload my projects."
+    },
+    "qplaymore": {
+       czech: "V říjnu jsem se stal web developerem na minecraft serveru Qplay.cz.",
+       english: "In October, I became a web developer on the czech minecraft server Qplay.cz."
+    },
+    "avice": {
+      czech: "A více",
+      english: "And more"
+    },
+    "avicemore": {
+      czech: "Znám i další. Umím vytvořit počítačové programy, mobilní aplikace, webscrapers, a další. Pokud mě chcete podpořit, dejte nějakému mému repozitáři ",
+      english: "I know others. I can create computer programs, mobile applications, webscrapers, and more. If you want to support me, give one of my repositories a "
     },
     "star": {
         czech: "hvězdu",
@@ -184,17 +200,9 @@ const texty = {
         czech: "Omlouváme se, příspěvek neexistuje.",
         english: "Sorry, the post does not exist."
     },
-    "resume": {
-        czech: "Moje cesta",
-        english: "Resume"
-    },
     "cemusevenuji": {
         czech: "Čemu se věnuji?",
         english: "What do I do?"
-    },
-    "cemusevenujimore": {
-        czech: "Vytvářím vysoce škálovatelné a spolehlivé webové aplikace, programy a skripty. Pracuji s databázemi jako jsou MySQL. Umím vytvořit plně funkční aplikaci včetně designu a funkčnosti. Mám zkušenosti s React, NextJS, NodeJS a Python. Programuji už 5 let. Web developmentu se věnuji 3 roky.",
-        english: "I build highly scalable and reliable web applications, programs and scripts. I work with databases such as MySQL. I can create fully working application including design and functionality. I have experience with React, NextJS, NodeJS and Python. I have been programming for 5 years. I have been involved in web development for 3 years."
     },
     "aboutLanguager": {
         czech: "Languager je JavaScriptová knihovka ktera Vám umoží vytvářet webové stránky s více jazyky jednoduše.",

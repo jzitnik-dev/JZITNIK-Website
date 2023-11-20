@@ -60,7 +60,7 @@ function Technologie() {
                             {
                                 Object.keys(allTechnologies).map((e) => {
                                     return (
-                                        <a href={allTechnologies[e]} target="_blank">
+                                        <a href={allTechnologies[e]} key={e} target="_blank">
                                             <img onMouseOver={hover} onMouseOut={hoverout} src={"https://skillicons.dev/icons?i="+e}></img>
                                         </a>
                                     )

@@ -3,8 +3,7 @@ import texty from "../../texty"
 import { useEffect, useState } from "react";
 import Fourofour from "../../pages/404/404"
 import { useParams } from "react-router-dom";
-
-const BACKEND = "https://backend.jzitnik.is-a.dev/jzitnik/geturl/"
+import Config from "../../config"
 
 function Redirect() {
     const [message, setMessage] = useState(texty["pockejte"])
@@ -12,7 +11,7 @@ function Redirect() {
     var { link } = useParams();
 
     useEffect(() => {
-        fetch(BACKEND + link)
+        fetch(Config.backend + "jzitnik/geturl/" + link)
             .then(res => res.json())
             .then(res => {
                 if (res["message"] == "success") {
