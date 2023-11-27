@@ -35,7 +35,7 @@ function Blog() {
                                         <small className="vytvoril">{e[1].user}</small>
                                         <small className="vytvoreno">{e[1].created}</small>
                                     </div>
-                                    <div className="text"><Markup content={e[1].text}></Markup></div>
+                                    <div className="text">{e[1].text.split(" ").length > 40 ? e[1].text.replace(/<[^>]+>/g,'').trim().split(" ", 40).join(" ")+"..." : e[1].text.replace(/<[^>]+>/g,'')}</div>
                                 </div>
                             </Link>)
                         })}
