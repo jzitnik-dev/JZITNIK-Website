@@ -153,8 +153,8 @@ const texty = {
       english: "And more"
     },
     "avicemore": {
-      czech: "Znám i další. Umím vytvořit počítačové programy, mobilní aplikace, webscrapers, a další. Pokud mě chcete podpořit, dejte nějakému mému repozitáři ",
-      english: "I know others. I can create computer programs, mobile applications, webscrapers, and more. If you want to support me, give one of my repositories a "
+      czech: "Umím vytvořit počítačové programy, mobilní aplikace, webscrapers, a další. Pokud mě chcete podpořit, dejte nějakému mému repozitáři ",
+      english: "I can create computer programs, mobile applications, webscrapers, and more. If you want to support me, give one of my repositories a "
     },
     "star": {
         czech: "hvězdu",
