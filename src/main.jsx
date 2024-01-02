@@ -20,6 +20,8 @@ const Blog =            lazy(() => import("./pages/blog/Blog/"))
 const BlogPost =        lazy(() => import("./pages/blog/BlogPost/"))
 const UrlShortener =    lazy(() => import("./components/urlshortener/UrlShortener"))
 const Technologie =     lazy(() => import("./pages/technologie/Technologie"))
+const Health =          lazy(() => import("./pages/health/Body"))
+const Cloud =           lazy(() => import("./pages/cloud/Body"))
 
 
 function Router() {
@@ -53,10 +55,16 @@ function Router() {
         {/* Technologie */}
         <Route path='/technologies' element={<Technologie />} />
 
+        {/* Health */}
+        <Route path='/health' element={<Health />} />
+
+        {/* Cloud */}
+        <Route path='/cloud/:file' element={<Cloud />} />
+
         {/* 404 page */}
         <Route path='*' element={<FourOFour />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </BrowserRouter>
   )
 }
