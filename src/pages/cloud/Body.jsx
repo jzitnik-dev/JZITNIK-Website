@@ -61,11 +61,18 @@ function cloud() {
                   <p>Název souboru: {file}</p>
                   <p>Velikost souboru: {humanFileSize(totalSize)}</p>
                 </div>
-              </div>
+              </div>,
             );
           } else {
-            console.log(
-              "Downloaded: Progress calculation not available (Content-Length not provided)",
+            setContent(
+              <div className="aboutmeStarting">
+                <div className="aboutmeContent">
+                  <p>Právě probíhá stahování</p>
+                  <hr />
+                  <p>Název souboru: {file}</p>
+                  <p>Velikost souboru: {humanFileSize(totalSize)}</p>
+                </div>
+              </div>,
             );
           }
         };
@@ -91,7 +98,7 @@ function cloud() {
                   <h1>Staženo!</h1>
                   <p>Soubor byl úspěšně stažen!</p>
                 </div>
-              </div>
+              </div>,
             );
           } else if (xhr.status === 403) {
             setContent(
@@ -100,7 +107,7 @@ function cloud() {
                   <h1>Chyba!</h1>
                   <p>K tomuto souboru nemáte přístup!</p>
                 </div>
-              </div>
+              </div>,
             );
           } else if (xhr.status === 404) {
             setContent(
@@ -109,7 +116,7 @@ function cloud() {
                   <h1>Chyba!</h1>
                   <p>Tento soubor nebyl nalezen!</p>
                 </div>
-              </div>
+              </div>,
             );
           } else if (xhr.status === 410) {
             setContent(
@@ -119,8 +126,8 @@ function cloud() {
                   <p>Platnost odkazu vypršela.</p>
                   <p>Kontaktujte majitele obsahu pro obnovení odkazu.</p>
                 </div>
-              </div>
-            )
+              </div>,
+            );
           } else {
             setContent(
               <div className="aboutmeStarting">
@@ -129,7 +136,7 @@ function cloud() {
                   <p>Kód chyby: {xhr.status}</p>
                   <p>Text: {xhr.statusText}</p>
                 </div>
-              </div>
+              </div>,
             );
           }
         };
