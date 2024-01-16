@@ -148,7 +148,7 @@ function cloud() {
 
   return (
     <>
-      <div className="mainAbout content">{content}</div>
+      <div className="mainCloud content">{content}</div>
     </>
   );
 }

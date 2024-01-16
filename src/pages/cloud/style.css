@@ -1,27 +1,28 @@
-.mainAbout {
-    width: 100%;
-    min-height: calc(100vh - 300px);
-    margin-top: 50px;
-    color: white;
-    font-family: var(--main-font);
-    display: none;
+.mainCloud {
+  width: 100%;
+  min-height: calc(100vh - 300px);
+  margin-top: 50px;
+  color: white;
+  font-family: var(--main-font);
+  display: none;
+  text-align: center;
 }
 .content {
-  display: block
+  display: block;
 }
-.mainAbout a {
-    color: rgb(87, 203, 255);
-    text-decoration: none;
+.mainCloud a {
+  color: rgb(87, 203, 255);
+  text-decoration: none;
 }
-.mainAbout > div {
-    width: 100%;
-    height: 100%;
-    display: flex;
-} 
-.mainAbout .aboutmeStarting {
-    justify-content: center
+.mainCloud > div {
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
-.mainAbout .aboutmeStarting .aboutmeContent{
+.mainCloud .aboutmeStarting {
+  justify-content: center;
+}
+.mainCloud .aboutmeStarting .aboutmeContent {
   height: 100%;
   max-width: 800px;
   width: 100%;
@@ -32,107 +33,24 @@
   transition: ease 0.5s 0.3s all;
   position: relative;
 }
-.mainAbout .aboutmeStarting .aboutmeContent.show {
+.mainCloud .aboutmeStarting .aboutmeContent.show {
   top: 0px;
   opacity: 1;
 }
-.mainAbout .aboutmeStarting .aboutmeContent h1 {
-    font-size: 50px;
-    margin-top: 20px;
+.mainCloud .aboutmeStarting .aboutmeContent h1 {
+  font-size: 50px;
+  margin-top: 20px;
 }
-.mainAbout .aboutmeStarting .aboutmeContent h2 {
-    font-size: 30px;
-    margin-top: 20px;
+.mainCloud .aboutmeStarting .aboutmeContent h2 {
+  font-size: 30px;
+  margin-top: 20px;
 }
-.mainAbout .aboutmeStarting .aboutmeContent p {
-    margin-top: 20px;
-}
-
-.aboutmeContent h1, .aboutmeContent p {
-  text-align: center;
+.mainCloud .aboutmeStarting .aboutmeContent p {
+  margin-top: 20px;
 }
 
-:root {  
-    --purple: rgb(123, 31, 162);
-    --violet: rgb(103, 58, 183);
-    --pink: rgb(244, 143, 177);
-  }
-  
-  @keyframes background-pan {
-    from {
-      background-position: 0% center;
-    }
-    
-    to {
-      background-position: -200% center;
-    }
-  }
-  
-  @keyframes scale {
-    from, to {
-      transform: scale(0);
-    }
-    
-    50% {
-      transform: scale(1);
-    }
-  }
-  
-  @keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    
-    to {
-      transform: rotate(180deg);
-    }
-  }
-  
- 
-  
-  
-  
-  .magic {
-    display: inline-block;
-    position: relative;
-    cursor:default;
-  }
-  
-  .magic > .magic-star {
-    --size: clamp(20px, 1.5vw, 30px);
-    
-    animation: scale 700ms ease forwards;
-    display: block;
-    height: var(--size);
-    left: var(--star-left);
-    position: absolute;
-    top: var(--star-top);
-    width: var(--size);
-  }
-  
-  .magic > .magic-star > svg {
-    animation: rotate 1000ms linear infinite;
-    display: block;
-    opacity: 0.7;
-  }
-  
-  .magic > .magic-star > svg > path {
-    fill: var(--violet);
-  }
-  
-  .magic > .magic-text {
-    animation: background-pan 3s linear infinite;
-    background: linear-gradient(
-      to right,
-      var(--purple),
-      var(--violet),
-      var(--pink),
-      var(--purple)
-    );
-    background-size: 200%;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    white-space: nowrap;
-  }
-  
- 
+:root {
+  --purple: rgb(123, 31, 162);
+  --violet: rgb(103, 58, 183);
+  --pink: rgb(244, 143, 177);
+}
