@@ -41,8 +41,8 @@ const texty = {
         english: "Contact"
     },
     "totoKontakt": {
-        czech: "Zde mě můžete kontaktovat nebo na email: email@jzitnik.is-a.dev",
-        english: "Here you can contact me. Or you can contact me on email@jzitnik.is-a.dev"
+        czech: "Zde mě můžete kontaktovat nebo na email: email@jzitnik.dev",
+        english: "Here you can contact me. Or you can contact me on email@jzitnik.dev"
     },
     "submit": {
         czech: "Odeslat",

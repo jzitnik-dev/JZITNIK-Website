@@ -388,7 +388,7 @@ function index() {
                         <p>{texty["totoProjekty"]}</p>
                         <div className="projects">
                             <div id="cards">
-                                <a href="https://klindos.jzitnik.is-a.dev" target="_blank">
+                                <a href="https://klindos.jzitnik.dev" target="_blank">
                                     <div className="card animation">
                                         <div className="card-content">
                                             <div className="card-image">
@@ -454,7 +454,7 @@ function index() {
                     <div className="element">
                         <div className="title">{texty["statuspage"]}</div>
                         <p>{texty["aboutstatus"]}</p>
-                        <div className="button"><a href="https://status.jzitnik.is-a.dev" target="_blank" className="buttonContainer animation">{texty["open"]}</a></div>
+                        <div className="button"><a href="https://status.jzitnik.dev" target="_blank" className="buttonContainer animation">{texty["open"]}</a></div>
                     </div>
                 </section>
                 <section className="kontakt" id="contact">

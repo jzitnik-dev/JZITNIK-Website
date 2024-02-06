@@ -16,7 +16,7 @@ function Footer() {
                     </p>
                     <div className="kontakty">
                         <h2>{texty["kontakt"]}</h2>
-                        <p style={{"marginTop": "2px"}}>Email: <a href="emailto:email@jzitnik.is-a.dev">email@jzitnik.is-a.dev</a></p>
+                        <p style={{"marginTop": "2px"}}>Email: <a href="emailto:email@jzitnik.dev">email@jzitnik.dev</a></p>
                         <p>Github: <Link to="/link/github">JZITNIK-github</Link></p>
                     </div>
 
