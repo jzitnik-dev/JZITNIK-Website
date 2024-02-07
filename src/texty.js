@@ -1,20 +1,20 @@
 var defaultLanguage = "english"
 const texty = {
     "Ahoj, já jsem": {
-        english: "Hello, I'm",
-        czech: "Ahoj, já jsem"
+        english: "Hello, my name is",
+        czech: "Ahoj, jmenuji se"
     },
     "O mě": {
         english: "About me",
         czech: "O mně"
     },
     "cemusevenujimore": {
-        czech: "Vytvářím vysoce škálovatelné a spolehlivé webové aplikace, programy a skripty. Pracuji s databázemi jako jsou MySQL. Umím vytvořit plně funkční aplikaci včetně designu a funkčnosti. Mám zkušenosti s React, NextJS, NodeJS a Python. Programuji už 5 let. Web developmentu se věnuji 3 roky.",
-        english: "I build highly scalable and reliable web applications, programs and scripts. I work with databases such as MySQL. I can create fully working application including design and functionality. I have experience with React, NextJS, NodeJS and Python. I have been programming for 5 years. I have been involved in web development for 3 years."
+        czech: "Vytvářím spolehlivé webové aplikace, programy a skripty. Pracuji s databázemi jako jsou MySQL nebo PostgreSQL. Umím vytvořit plně funkční aplikaci včetně designu a funkčnosti. Mám zkušenosti s React, NextJS, NodeJS a Python. Programuji už 5 let. Web developmentu se věnuji 3 roky.",
+        english: "I build reliable web applications, programs and scripts. I work with databases such as MySQL or PostgreSQL. I can create fully working application including design and functionality. I have experience with React, NextJS, NodeJS and Python. I have been programming for 5 years. I have been involved in web development for 3 years."
     },
     "aboutme": {
-        czech: "Ahoj, jmenuji se Jakub Žitník, Full Stack Web Developer.<br><br>Vytvářím vysoce škálovatelné a spolehlivé webové aplikace, programy a skripty. Pracuji s databázemi jako jsou MySQL. Umím vytvořit plně funkční aplikaci včetně designu a funkčnosti. Mám zkušenosti s React, NextJS, NodeJS a Python. Programuji už 5 let. Web developmentu se věnuji 3 roky.",
-        english: "Hello, I'm Jakub Žitník, Full Stack Web Developer.<br><br>I build highly scalable and reliable web applications, programs and scripts. I work with databases such as MySQL. I can create fully working application including design and functionality. I have experience with React, NextJS, NodeJS and Python. I have been programming for 5 years. I have been involved in web development for 3 years."
+        czech: "Ahoj, jmenuji se Jakub Žitník a jsem Web Developer.<br><br>Vytvářím spolehlivé webové aplikace, programy a skripty. Pracuji s databázemi jako jsou MySQL nebo PostgreSQL. Umím vytvořit plně funkční aplikaci včetně designu a funkčnosti. Mám zkušenosti s React, NextJS, NodeJS, Python a další. Programování se věnuji již 5 let a web developmentu 3 roky.",
+        english: "Hello, I'm Jakub Žitník, Full Stack Web Developer.<br><br>I build reliable web applications, programs and scripts. I work with databases such as MySQL or PostgreSQL. I can create fully working application including design and functionality. I have experience with React, NextJS, NodeJS Python and more. I have been programming for 5 years and have been involved in web development for 3 years."
     },
     "zkusenosti": {
         czech: "Zkušenosti",
@@ -41,8 +41,8 @@ const texty = {
         english: "Contact"
     },
     "totoKontakt": {
-        czech: "Zde mě můžete kontaktovat nebo na email: email@jzitnik.dev",
-        english: "Here you can contact me. Or you can contact me on email@jzitnik.dev"
+      czech: "Můžete mě kontaktovat zde nebo na mém emailu: email@jzitnik.dev",
+        english: "You can contact me here or on my email: email@jzitnik.dev"
     },
     "submit": {
         czech: "Odeslat",
@@ -121,8 +121,8 @@ const texty = {
         english: "Welcome"
     },
     "longZacatkyAboutMe": {
-        czech: "Už v 6 letech mě bavily počítače. Vytvářel jsem si 'programy' v excelu a powerpointu s interaktivními prvky jako například tlačítky. <a download href='/download/KLINDOWS 2.1.pptx'>Stáhnout</a><br><br>V roce 2018 jsem začal poprvé programovat. Začal jsem chodit do kroužku programování C#. Vytvářel jsem si svoje konzolové aplikace i aplikace s uživatelským rozhraním. <a download href='/download/app.zip'>Stáhnout</a>",
-        english: "I was already interested in computers at the age of 6. I was creating 'programs' in excel and powerpoint with interactive elements such as buttons. <a download href='/download/KLINDOWS 2.1.pptx'>Download (in czech)</a><br><br>In 2018, I started programming for the first time. I started going to a C# programming club. I was creating my own console applications as well as user interface applications. <a download href='/download/app.zip'>Download (in czech)</a>"
+        czech: "Už v 6 letech jsem si hrál na počítači. Vytvářel jsem si 'programy' v excelu a powerpointu s interaktivními prvky jako například tlačítka. <a download href='/download/KLINDOWS 2.1.pptx'>Stáhnout</a><br><br>V roce 2018 jsem začal poprvé programovat. Začal jsem chodit do kroužku programování C#. Vytvářel jsem si svoje konzolové aplikace i aplikace s uživatelským rozhraním pomocí WinForms. <a download href='/download/app.zip'>Stáhnout</a>",
+        english: "I was already interested in computers at the age of 6. I was creating 'programs' in excel and powerpoint with interactive elements such as buttons. <a download href='/download/KLINDOWS 2.1.pptx'>Download (in czech)</a><br><br>In 2018, I started programming for the first time. I started going to a C# programming club. I was creating my own console applications as well as user interface applications with WinForms. <a download href='/download/app.zip'>Download (in czech)</a>"
     },
     "zacatky": {
         czech: "Začátky",
@@ -197,7 +197,7 @@ const texty = {
         english: "The post does not exist"
     },
     "prispevekNeexistujeMore": {
-        czech: "Omlouváme se, příspěvek neexistuje.",
+        czech: "Omlouvám se, příspěvek neexistuje.",
         english: "Sorry, the post does not exist."
     },
     "cemusevenuji": {
@@ -229,8 +229,8 @@ const texty = {
         english: "Technologies I use"
     },
     "fullstack": {
-        czech: "Full Stack Web Developer",
-        english: "Full Stack Web Developer and tech enthusiast"
+          czech: "Jsem Web Developer",
+        english: "I'm Web Developer and tech enthusiast"
     }
 }
 if (!localStorage.getItem("language")) ((navigator.language || navigator.userLanguage).split("-")[0] == "cs") ? localStorage.setItem("language","czech") : localStorage.setItem("language","english");

@@ -1,80 +1,88 @@
 .blogmain {
-    min-height: calc(100vh - 250px);
-    height: fit-content;
-    position: relative;
-    font-family: var(--main-font); 
-    padding: 40px;
+  min-height: calc(100vh - 250px);
+  height: fit-content;
+  position: relative;
+  font-family: var(--main-font);
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .blogmain .monkey {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
 }
-.blogmain .element{
-    padding: 20px;
-    width: 100%;
-    max-width: 900px;
-    margin-top: 30px;
-    position: relative;
+.blogmain .element {
+  padding: 20px;
+  width: 100%;
+  max-width: 900px;
+  margin-top: 30px;
+  position: relative;
 }
 .blogmain .element.animation {
-    opacity: 0;
-    top: 20px;
-    transition: ease 0.5s 0.2s all;
+  opacity: 0;
+  top: 20px;
+  transition: ease 0.5s 0.2s all;
 }
 .blogmain .element.show {
-    opacity: 1;
-    top: 0;
+  opacity: 1;
+  top: 0;
 }
 .blogmain .element p {
-    color: white;
-    font-size: 20px;
-    margin-top: 5px;
+  color: white;
+  font-size: 20px;
+  margin-top: 5px;
 }
 .blogmain .element .content {
-    color: white;
-    margin-top: 15px;
+  color: white;
+  margin-top: 15px;
 }
 .blogmain .element .title {
-    color: white;
-    font-family: var(--main-font); 
-    font-size: 40px;
+  color: white;
+  font-family: var(--main-font);
+  font-size: 40px;
 }
 .blogmain .prispevky {
-    width: 100%;
-    margin-top: 15px;
+  width: 100%;
+  margin-top: 15px;
 }
 .blogmain a {
-    text-decoration: none;
+  text-decoration: none;
 }
 .content a {
-    color: #57cbff;
+  color: #57cbff;
 }
 .blogmain .prispevky .prispevek {
-    color: white;
-    padding: 20px;
-    border: 1px solid white;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    opacity: 0;
-    top: 30px;
-    position: relative;
+  color: white;
+  padding: 30px;
+  margin-bottom: 10px;
+  opacity: 0;
+  top: 30px;
+  position: relative;
+  background-color: #1a1a1a;
+  border-radius: 5px;
+  box-shadow: #1f70951c 0px 5px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.blogmain .prispevky .prispevek:hover {
+  box-shadow: #1f709540 0px 5px 20px;
 }
 .blogmain .prispevky .prispevek.show {
-    opacity: 1;
-    top: 0;
+  opacity: 1;
+  top: 0;
 }
 .blogmain .prispevky .prispevek .info {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 8px;
-    margin-top: 2px;
-    font-size: 20px;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+  margin-top: 2px;
+  font-size: 20px;
 }
 .blogmain .prispevky .prispevek .nadpis {
-    font-size: 35px;
+  font-size: 35px;
 }
 .blogmain .prispevky .prispevek .nadpis .text {
-    font-size: 25px;
+  font-size: 25px;
 }

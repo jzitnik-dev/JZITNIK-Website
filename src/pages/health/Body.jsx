@@ -14,7 +14,10 @@ function health() {
         <div className="aboutmeStarting">
           <div className="aboutmeContent animation">
             <h1>...</h1>
-            <p>I just don't wanna live. Just livin' for others rn.</p>
+            <p>I just don't wanna live. Just living for others rn.</p>
+            <div dangerouslySetInnerHTML={{__html: `<!--
+              Trying not to hurt myself. Yeah, life is pain. Dw about me.
+            -->`}}></div>
           </div>
         </div>
       </div>

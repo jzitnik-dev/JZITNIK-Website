@@ -13,7 +13,7 @@ function Loading({fallback}) {
                         document.querySelector(".loading").style.display = "none"
                     }, 500);
                 }, 300);
-            }, 1000);
+            }, 400);
         }
     }, []);
     return (
