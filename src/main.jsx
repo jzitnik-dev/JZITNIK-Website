@@ -29,7 +29,6 @@ function Router() {
     if (window.location.hostname == "jzitnik.is-a.dev") {
       const url = new URL(window.location.href);
       url.hostname = "jzitnik.dev";
-      url.port = 80;
       window.location.replace(url.href)
     }
   }, [])
