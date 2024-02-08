@@ -1,6 +1,6 @@
-import React, {lazy, Suspense} from 'react'
+import React, {lazy, Suspense, useEffect} from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import "./index.css"
 import 'boxicons'
 
@@ -25,6 +25,14 @@ const Cloud =           lazy(() => import("./pages/cloud/Body"))
 
 
 function Router() {
+  useEffect(() => {
+    if (window.location.hostname == "jzitnik.is-a.dev") {
+      const url = new URL(window.location.href);
+      url.hostname = "jzitnik.dev";
+      url.port = 80;
+      window.location.replace(url.href)
+    }
+  }, [])
   return (
     <BrowserRouter>
       <Header/>
