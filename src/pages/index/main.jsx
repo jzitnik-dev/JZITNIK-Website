@@ -245,7 +245,7 @@ function index() {
           pauseOnHover
           theme="dark"
         />
-        <main id="particles">
+        <main class="indexmain" id="particles">
           <div className="gradient"></div>
           <section>
             <p className="hello animation animationStyles">

@@ -1,14 +1,14 @@
 :root {
   --card-color: rgb(30, 29, 36);
 }
-main {
+main.indexmain {
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   padding: 0px 10vw;
 }
-main .gradient {
+main.indexmain .gradient {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -18,7 +18,7 @@ main .gradient {
     rgba(38, 140, 245, 0) 100%
   );
 }
-main section {
+main.indexmain section {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -29,35 +29,35 @@ main section {
   width: 100%;
   pointer-events: none;
 }
-main section .social {
+main.indexmain section .social {
   transition: ease 0.6s all;
   transition-delay: 0.8s;
   margin-top: 10px;
   pointer-events: auto;
 }
-main section .social a {
+main.indexmain section .social a {
   height: 24px;
   display: block;
   float: left;
 }
 
-main section *.animation {
+main.indexmain section *.animation {
   opacity: 0;
   top: 20px;
   position: relative;
 }
-main section *.animation.show {
+main.indexmain section *.animation.show {
   opacity: 1;
   top: 0;
 }
-main section .hello {
+main.indexmain section .hello {
   font-size: 30px;
   color: #57cbff;
   font-family: "Roboto Mono", monospace, sans-serif;
   transition: ease 0.6s all;
   transition-delay: 0.2s;
 }
-main section h2 {
+main.indexmain section h2 {
   font-family: var(--main-font);
   font-weight: bold;
   background-image: linear-gradient(
@@ -73,7 +73,7 @@ main section h2 {
   transition: ease 0.6s all;
   transition-delay: 0.4s;
 }
-main section .miniAbout {
+main.indexmain section .miniAbout {
   font-family: var(--main-font);
   color: #acb4cc;
   font-size: 25px;
@@ -81,13 +81,13 @@ main section .miniAbout {
   transition-delay: 0.6s;
 }
 @media only screen and (max-width: 750px) {
-  main section .hello {
+  main.indexmain section .hello {
     font-size: 25px;
   }
-  main section h2 {
+  mai.indexmainn section h2 {
     font-size: 70px;
   }
-  main section .miniAbout {
+  main.indexmain section .miniAbout {
     font-size: 20px;
   }
 }
