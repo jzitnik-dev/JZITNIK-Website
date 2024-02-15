@@ -579,8 +579,8 @@ i {
 .card-image > img {
   object-fit: contain;
   position: relative;
-  width: 100%;
   height: 100%;
+  border-radius: 5px;
 }
 
 .card-info-wrapper {
