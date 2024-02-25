@@ -5,6 +5,7 @@ import ScrollAnimation from "../../scrollAnimation";
 import Loading from "../../components/loading/Loading";
 import { Link } from "react-router-dom";
 import Config from "../../config";
+import { Button } from "@mui/material";
 
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
@@ -273,11 +274,11 @@ function index() {
             <div className="title">{texty["O mě"]}</div>
             <hr></hr>
             <p dangerouslySetInnerHTML={{ __html: texty["aboutme"] }}></p>
-            <div className="button">
-              <Link to="/about" className="buttonContainer animation">
+            <Link to="/about" className="buttonContainer animation">
+              <Button className="button" variant="contained">
                 {texty["more"]}
-              </Link>
-            </div>
+              </Button>
+            </Link>
           </div>
         </section>
         <section id="skills" className="skills">
@@ -449,11 +450,11 @@ function index() {
                 </Link>
               </div>
             </div>
-            <div className="button">
-              <Link to="/certificates" className="buttonContainer animation">
+            <Link to="/certificates" className="buttonContainer animation">
+              <Button className="button" variant="contained">
                 {texty["zobrazitVse"]}
-              </Link>
-            </div>
+              </Button>
+            </Link>
           </div>
         </section>
         <section className="projekty" id="projects">
@@ -531,12 +532,10 @@ function index() {
             <div className="title">{texty["statuspage"]}</div>
             <p>{texty["aboutstatus"]}</p>
             <div className="button">
-              <a
-                href="https://status.jzitnik.dev"
-                target="_blank"
-                className="buttonContainer animation"
-              >
-                {texty["open"]}
+              <a href="https://status.jzitnik.dev" target="_blank" className="buttonContainer animation">
+                <Button className="button" variant="contained">
+                  {texty["open"]}
+                </Button>
               </a>
             </div>
           </div>

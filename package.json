@@ -11,6 +11,10 @@
     "start": "vite dev --host"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@fontsource/roboto": "^5.0.8",
+    "@mui/material": "^5.15.11",
     "babel-plugin-prismjs": "^2.1.0",
     "boxicons": "^2.1.4",
     "interweave": "^13.1.0",
