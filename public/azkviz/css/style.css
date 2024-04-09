@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+}
+
+.hex {
+  float: left;
+  margin-right: -26px;
+  margin-bottom: -50px;
+}
+.hex .left {
+  float: left;
+  width: 0;
+  border-right: 30px solid #bbe1e2;
+  border-top: 52px solid transparent;
+  border-bottom: 52px solid transparent;
+}
+.hex .middle {
+  float: left;
+  width: 60px;
+  height: 104px;
+  background: #bbe1e2;
+}
+.hex .right {
+  float: left;
+  width: 0;
+  border-left: 30px solid #bbe1e2;
+  border-top: 52px solid transparent;
+  border-bottom: 52px solid transparent;
+}
+
+.hex.gray .left {
+  border-right: 30px solid gray;
+}
+.hex.gray .middle {
+  background: gray;
+}
+.hex.gray .right {
+  border-left: 30px solid gray;
+}
+
+.hex.red span {
+  color: white;
+}
+.hex.red .left {
+  border-right: 30px solid red;
+}
+.hex.red .middle {
+  background: red;
+}
+.hex.red .right {
+  border-left: 30px solid red;
+}
+
+.hex.blue span {
+  color: white;
+}
+.hex.blue .left {
+  border-right: 30px solid darkblue;
+}
+.hex.blue .middle {
+  background: darkblue;
+}
+.hex.blue .right {
+  border-left: 30px solid darkblue;
+}
+
+
+.hex-row {
+  clear: left;
+}
+.hex.even {
+  margin-top: 53px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: white;
+}
+
+.main {
+  margin-top: -60px;
+  position: relative;
+}
+
+.number {
+  cursor: pointer;
+  font-size: 50px;
+  position: absolute;
+}
+
+.question {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
+  background-color: white;
+  text-align: center;
+}
+.question .number {
+  width: 100%;
+  font-size: 80px;
+  margin-top: 20px;
+  position: relative;
+}
+.question .questions div {
+  font-size: 50px;
+  margin: 20px;
+}
+.question .reseni {
+  margin-top: 30px;
+}
+.question .reseni .reseniList div {
+  font-size: 50px;
+}
+.reseni h1 {
+  width: 100%;
+  font-size: 50px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.question .button {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  height: 70px;
+  width: 200px;
+  cursor: pointer;
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #bbe1e2;
+  border: 3px solid black;
+  border-radius: 5px;
+}
+
+.skupina1 {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  background-color: red;
+  border: 3px solid black;
+  height: 120px;
+  width: 120px;
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.skupina2 {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: darkblue;
+  border: 3px solid black;
+  height: 120px;
+  width: 120px;
+  color: white;
+  font-size: 35px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
