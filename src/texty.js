@@ -10,15 +10,15 @@ const texty = {
   },
   cemusevenujimore: {
     czech:
-      "Vytvářím spolehlivé webové aplikace, programy a skripty. Pracuji s databázemi jako jsou MySQL nebo PostgreSQL. Umím vytvořit plně funkční aplikaci včetně designu a funkčnosti. Mám zkušenosti s React, NextJS, NodeJS a Python. Programuji už 5 let. Web developmentu se věnuji 3 roky.",
+      "Vytvářím spolehlivé webové aplikace, programy a skripty. Pracuji s databázemi jako jsou MySQL nebo PostgreSQL. Umím vytvořit plně funkční aplikaci včetně designu a funkčnosti. Mám zkušenosti s React, NextJS, NodeJS a Python. Programuji už 5 let. Web developmentu se věnuji 4 roky.",
     english:
-      "I build reliable web applications, programs and scripts. I work with databases such as MySQL or PostgreSQL. I can create fully working application including design and functionality. I have experience with React, NextJS, NodeJS and Python. I have been programming for 5 years. I have been involved in web development for 3 years.",
+      "I build reliable web applications, programs and scripts. I work with databases such as MySQL or PostgreSQL. I can create fully working application including design and functionality. I have experience with React, NextJS, NodeJS and Python. I have been programming for 5 years. I have been involved in web development for 4 years.",
   },
   aboutme: {
     czech:
-      "Ahoj, jmenuji se Jakub Žitník a jsem Web Developer.<br><br>Vytvářím spolehlivé webové aplikace, programy a skripty. Pracuji s databázemi jako jsou MySQL nebo PostgreSQL. Umím vytvořit plně funkční aplikaci včetně designu a funkčnosti. Mám zkušenosti s React, NextJS, NodeJS, Python a další. Programování se věnuji již 5 let a web developmentu 3 roky.",
+      "Ahoj, jmenuji se Jakub Žitník a jsem Web Developer.<br><br>Vytvářím spolehlivé webové aplikace, programy a skripty. Pracuji s databázemi jako jsou MySQL nebo PostgreSQL. Umím vytvořit plně funkční aplikaci včetně designu a funkčnosti. Mám zkušenosti s React, NextJS, NodeJS, Python a další. Programování se věnuji již 5 let a web developmentu 4 roky.",
     english:
-      "Hello, I'm Jakub Žitník, Full Stack Web Developer.<br><br>I build reliable web applications, programs and scripts. I work with databases such as MySQL or PostgreSQL. I can create fully working application including design and functionality. I have experience with React, NextJS, NodeJS Python and more. I have been programming for 5 years and have been involved in web development for 3 years.",
+      "Hello, I'm Jakub Žitník, Full Stack Web Developer.<br><br>I build reliable web applications, programs and scripts. I work with databases such as MySQL or PostgreSQL. I can create fully working application including design and functionality. I have experience with React, NextJS, NodeJS Python and more. I have been programming for 5 years and have been involved in web development for 4 years.",
   },
   zkusenosti: {
     czech: "Zkušenosti",
