@@ -224,11 +224,11 @@ const texty = {
     czech: "Čemu se věnuji?",
     english: "What do I do?",
   },
-  aboutLanguager: {
+  aboutazkviz: {
     czech:
-      "Languager je JavaScriptová knihovka ktera Vám umoží vytvářet vícejazyčné webové stránky jednoduše.",
+      "Vytvořte si svůj vlastní AZ-kvíz na webové stránce. Můžete si vytvořit vlastní otázky a týmy.",
     english:
-      "Languager is JavaScript library that helps you easily create multilingual websites.",
+      "AZ-kvíz is popular Czech game. You can create your own AZ-kvíz on my website. You can create your own questions.",
   },
   madewith: {
     czech: "Vytvořeno s",

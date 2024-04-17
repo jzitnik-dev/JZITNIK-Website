@@ -366,7 +366,7 @@ function index() {
                 <div className="name">
                   Spring <span className="ucimse">{texty["ucimse"]}</span>
                 </div>
-                <div className="percentage">30%</div>
+                <div className="percentage">40%</div>
                 <div className="slider">
                   <div className="slide spring"></div>
                 </div>
@@ -380,7 +380,7 @@ function index() {
               </li>
               <li>
                 <div className="name">SQL</div>
-                <div className="percentage">65%</div>
+                <div className="percentage">75%</div>
                 <div className="slider">
                   <div className="slide sql"></div>
                 </div>
@@ -390,6 +390,13 @@ function index() {
                 <div className="percentage">40%</div>
                 <div className="slider">
                   <div className="slide php"></div>
+                </div>
+              </li>
+              <li>
+                <div className="name">Android</div>
+                <div className="percentage">20%</div>
+                <div className="slider">
+                  <div className="slide android"></div>
                 </div>
               </li>
             </ul>
@@ -480,6 +487,23 @@ function index() {
                     </div>
                   </div>
                 </a>
+                <a href="https://azkviz.jzitnik.dev" target="_blank">
+                  <div className="card animation">
+                    <div className="card-content">
+                      <div className="card-image">
+                        <img src="/images/azkviz.png"></img>
+                      </div>
+                      <div className="card-info-wrapper">
+                        <div className="card-info">
+                          <div className="card-info-title">
+                            <h3>AZ-kvíz [Czech]</h3>
+                            <h4>{texty["aboutazkviz"]}</h4>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
                 <a
                   href="https://github.com/JZITNIK-github/automatic-bio-changer"
                   target="_blank"
@@ -491,23 +515,6 @@ function index() {
                           <div className="card-info-title">
                             <h3>Automatic bio changer [English]</h3>
                             <h4>{texty["aboutABC"]}</h4>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-                <a
-                  href="https://github.com/JZITNIK-github/Languager"
-                  target="_blank"
-                >
-                  <div className="card animation">
-                    <div className="card-content">
-                      <div className="card-info-wrapper">
-                        <div className="card-info">
-                          <div className="card-info-title">
-                            <h3>Languager [English]</h3>
-                            <h4>{texty["aboutLanguager"]}</h4>
                           </div>
                         </div>
                       </div>
@@ -532,7 +539,11 @@ function index() {
             <div className="title">{texty["statuspage"]}</div>
             <p>{texty["aboutstatus"]}</p>
             <div className="button">
-              <a href="https://status.jzitnik.dev" target="_blank" className="buttonContainer animation">
+              <a
+                href="https://status.jzitnik.dev"
+                target="_blank"
+                className="buttonContainer animation"
+              >
                 <Button className="button" variant="contained">
                   {texty["open"]}
                 </Button>
