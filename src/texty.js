@@ -162,9 +162,9 @@ const texty = {
   },
   qplaymore: {
     czech:
-      "V říjnu roku 2023 jsem se stal web developerem na minecraft serveru Qplay.cz.",
+      "V říjnu roku 2023 jsem se stal web developerem na minecraft serveru Qplay.cz. Projekt QPlay.cz byl ukončen v březnu roku 2024.",
     english:
-      "In October 2023, I became a web developer on the czech minecraft server Qplay.cz.",
+      "In October 2023, I became a web developer on the czech minecraft server Qplay.cz. Project was discontinued in March 2024.",
   },
   avice: {
     czech: "A více",
